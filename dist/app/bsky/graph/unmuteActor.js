@@ -1,0 +1,25 @@
+export default {
+    "lexicon": 1,
+    "id": "app.bsky.graph.unmuteActor",
+    "defs": {
+        "main": {
+            "type": "procedure",
+            "description": "Unmutes the specified account. Requires auth.",
+            "input": {
+                "encoding": "application/json",
+                "schema": {
+                    "type": "object",
+                    "required": [
+                        "actor"
+                    ],
+                    "properties": {
+                        "actor": {
+                            "type": "string",
+                            "format": "at-identifier"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};

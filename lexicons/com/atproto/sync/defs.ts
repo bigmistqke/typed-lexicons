@@ -1,0 +1,16 @@
+export default {
+  "lexicon": 1,
+  "id": "com.atproto.sync.defs",
+  "defs": {
+    "hostStatus": {
+      "type": "string",
+      "knownValues": [
+        "active",
+        "idle",
+        "offline",
+        "throttled",
+        "banned"
+      ]
+    }
+  }
+} as const;

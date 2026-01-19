@@ -1,0 +1,47 @@
+export default {
+  "lexicon": 1,
+  "id": "tools.ozone.moderation.getRecords",
+  "defs": {
+    "main": {
+      "type": "query",
+      "description": "Get details about some records.",
+      "parameters": {
+        "type": "params",
+        "required": [
+          "uris"
+        ],
+        "properties": {
+          "uris": {
+            "type": "array",
+            "maxLength": 100,
+            "items": {
+              "type": "string",
+              "format": "at-uri"
+            }
+          }
+        }
+      },
+      "output": {
+        "encoding": "application/json",
+        "schema": {
+          "type": "object",
+          "required": [
+            "records"
+          ],
+          "properties": {
+            "records": {
+              "type": "array",
+              "items": {
+                "type": "union",
+                "refs": [
+                  "tools.ozone.moderation.defs#recordViewDetail",
+                  "tools.ozone.moderation.defs#recordViewNotFound"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} as const;

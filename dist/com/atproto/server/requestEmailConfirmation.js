@@ -1,0 +1,10 @@
+export default {
+    "lexicon": 1,
+    "id": "com.atproto.server.requestEmailConfirmation",
+    "defs": {
+        "main": {
+            "type": "procedure",
+            "description": "Request an email with a code to confirm ownership of email."
+        }
+    }
+};

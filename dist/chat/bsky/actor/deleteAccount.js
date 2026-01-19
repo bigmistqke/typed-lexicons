@@ -1,0 +1,16 @@
+export default {
+    "lexicon": 1,
+    "id": "chat.bsky.actor.deleteAccount",
+    "defs": {
+        "main": {
+            "type": "procedure",
+            "output": {
+                "encoding": "application/json",
+                "schema": {
+                    "type": "object",
+                    "properties": {}
+                }
+            }
+        }
+    }
+};

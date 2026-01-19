@@ -1,0 +1,36 @@
+{
+  "name": "@bigmistqke/typed-lexicons",
+  "version": "0.1.0",
+  "description": "Typed lexicons as defined in github.com/bluesky-social/atproto",
+  "type": "module",
+  "exports": {
+    "./*": {
+      "development": "./lexicons/*.ts",
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "bump": "bumpp",
+    "build": "tsc",
+    "prepublish": "pnpm build",
+    "update": "node update-lexicons.ts"
+  },
+  "keywords": [
+    "lexicon",
+    "valibot",
+    "atproto",
+    "bluesky"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "valibot": ">=1.0.0"
+  },
+  "devDependencies": {
+    "bumpp": "^9.0.0",
+    "typescript": "^5.0.0"
+  }
+}

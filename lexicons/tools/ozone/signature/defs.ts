@@ -1,0 +1,21 @@
+export default {
+  "lexicon": 1,
+  "id": "tools.ozone.signature.defs",
+  "defs": {
+    "sigDetail": {
+      "type": "object",
+      "required": [
+        "property",
+        "value"
+      ],
+      "properties": {
+        "property": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    }
+  }
+} as const;

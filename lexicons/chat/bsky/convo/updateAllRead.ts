@@ -1,0 +1,39 @@
+export default {
+  "lexicon": 1,
+  "id": "chat.bsky.convo.updateAllRead",
+  "defs": {
+    "main": {
+      "type": "procedure",
+      "input": {
+        "encoding": "application/json",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "knownValues": [
+                "request",
+                "accepted"
+              ]
+            }
+          }
+        }
+      },
+      "output": {
+        "encoding": "application/json",
+        "schema": {
+          "type": "object",
+          "required": [
+            "updatedCount"
+          ],
+          "properties": {
+            "updatedCount": {
+              "description": "The count of updated convos.",
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+} as const;

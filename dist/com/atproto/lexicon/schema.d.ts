@@ -1,0 +1,23 @@
+declare const _default: {
+    readonly lexicon: 1;
+    readonly id: "com.atproto.lexicon.schema";
+    readonly defs: {
+        readonly main: {
+            readonly type: "record";
+            readonly description: "Representation of Lexicon schemas themselves, when published as atproto records. Note that the schema language is not defined in Lexicon; this meta schema currently only includes a single version field ('lexicon'). See the atproto specifications for description of the other expected top-level fields ('id', 'defs', etc).";
+            readonly key: "nsid";
+            readonly record: {
+                readonly type: "object";
+                readonly required: readonly ["lexicon"];
+                readonly properties: {
+                    readonly lexicon: {
+                        readonly type: "integer";
+                        readonly description: "Indicates the 'version' of the Lexicon language. Must be '1' for the current atproto/Lexicon schema system.";
+                    };
+                };
+            };
+        };
+    };
+};
+export default _default;
+//# sourceMappingURL=schema.d.ts.map

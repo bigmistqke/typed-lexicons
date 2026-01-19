@@ -1,0 +1,10 @@
+export default {
+    "lexicon": 1,
+    "id": "com.atproto.server.requestAccountDelete",
+    "defs": {
+        "main": {
+            "type": "procedure",
+            "description": "Initiate a user account deletion via email."
+        }
+    }
+};
