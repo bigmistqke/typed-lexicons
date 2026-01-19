@@ -17,7 +17,7 @@
     "bump": "bumpp",
     "build": "tsc",
     "prepublish": "pnpm build",
-    "update": "node update-lexicons.ts"
+    "update": "node scripts/update-lexicons.ts"
   },
   "keywords": [
     "lexicon",
@@ -26,9 +26,6 @@
     "bluesky"
   ],
   "license": "MIT",
-  "peerDependencies": {
-    "valibot": ">=1.0.0"
-  },
   "devDependencies": {
     "bumpp": "^9.0.0",
     "typescript": "^5.0.0"
