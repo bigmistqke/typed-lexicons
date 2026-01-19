@@ -20,6 +20,57 @@ const TEMP_DIR = join(ROOT, ".temp-atproto");
 
 const REPO_URL = "https://github.com/bluesky-social/atproto.git";
 const BRANCH = "main";
+const PACKAGE_JSON_PATH = join(ROOT, "package.json");
+
+function findTsFiles(dir: string): string[] {
+  const files: string[] = [];
+
+  for (const entry of readdirSync(dir)) {
+    const fullPath = join(dir, entry);
+    const stat = statSync(fullPath);
+
+    if (stat.isDirectory()) {
+      files.push(...findTsFiles(fullPath));
+    } else if (entry.endsWith(".ts")) {
+      files.push(fullPath);
+    }
+  }
+
+  return files;
+}
+
+function updatePackageJsonExports() {
+  console.log("\nUpdating package.json exports...");
+
+  const tsFiles = findTsFiles(LEXICONS_DIR);
+  const packageJson = JSON.parse(readFileSync(PACKAGE_JSON_PATH, "utf-8"));
+
+  // Build exports object
+  const exports: Record<string, { development: string; types: string; import: string }> = {};
+
+  for (const tsFile of tsFiles) {
+    // Get path relative to lexicons dir, without .ts extension
+    const relativePath = relative(LEXICONS_DIR, tsFile).replace(/\.ts$/, "");
+    const exportKey = `./${relativePath}`;
+
+    exports[exportKey] = {
+      development: `./lexicons/${relativePath}.ts`,
+      types: `./dist/${relativePath}.d.ts`,
+      import: `./dist/${relativePath}.js`,
+    };
+  }
+
+  // Sort exports alphabetically for consistency
+  const sortedExports: Record<string, { development: string; types: string; import: string }> = {};
+  for (const key of Object.keys(exports).sort()) {
+    sortedExports[key] = exports[key];
+  }
+
+  packageJson.exports = sortedExports;
+
+  writeFileSync(PACKAGE_JSON_PATH, JSON.stringify(packageJson, null, 2) + "\n");
+  console.log(`Updated package.json with ${Object.keys(sortedExports).length} export entries`);
+}
 
 async function main() {
   console.log("Fetching atproto lexicons...\n");
@@ -79,6 +130,9 @@ async function main() {
   rmSync(TEMP_DIR, { recursive: true });
 
   console.log(`\nLexicons written to: ${LEXICONS_DIR}`);
+
+  // Update package.json exports
+  updatePackageJsonExports();
 }
 
 function findJsonFiles(dir: string) {
