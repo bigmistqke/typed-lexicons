@@ -1,6 +1,6 @@
 {
   "name": "@bigmistqke/typed-lexicons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typed lexicons as defined in github.com/bluesky-social/atproto",
   "type": "module",
   "exports": {
