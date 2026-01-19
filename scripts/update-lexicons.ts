@@ -45,18 +45,25 @@ function updatePackageJsonExports() {
   const tsFiles = findTsFiles(LEXICONS_DIR);
   const packageJson = JSON.parse(readFileSync(PACKAGE_JSON_PATH, "utf-8"));
 
-  // Build exports object
-  const exports: Record<string, { development: string; types: string; import: string }> = {};
+  // Collect unique directories that contain .ts files
+  const directories = new Set<string>();
 
   for (const tsFile of tsFiles) {
-    // Get path relative to lexicons dir, without .ts extension
-    const relativePath = relative(LEXICONS_DIR, tsFile).replace(/\.ts$/, "");
-    const exportKey = `./${relativePath}`;
+    const relativePath = relative(LEXICONS_DIR, tsFile);
+    const dir = dirname(relativePath);
+    directories.add(dir);
+  }
+
+  // Build exports object with wildcard patterns per directory
+  const exports: Record<string, { development: string; types: string; import: string }> = {};
+
+  for (const dir of directories) {
+    const exportKey = `./${dir}/*`;
 
     exports[exportKey] = {
-      development: `./lexicons/${relativePath}.ts`,
-      types: `./dist/${relativePath}.d.ts`,
-      import: `./dist/${relativePath}.js`,
+      development: `./lexicons/${dir}/*.ts`,
+      types: `./dist/${dir}/*.d.ts`,
+      import: `./dist/${dir}/*.js`,
     };
   }
 
@@ -69,7 +76,7 @@ function updatePackageJsonExports() {
   packageJson.exports = sortedExports;
 
   writeFileSync(PACKAGE_JSON_PATH, JSON.stringify(packageJson, null, 2) + "\n");
-  console.log(`Updated package.json with ${Object.keys(sortedExports).length} export entries`);
+  console.log(`Updated package.json with ${Object.keys(sortedExports).length} wildcard export entries`);
 }
 
 async function main() {

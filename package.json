@@ -4,1615 +4,206 @@
   "description": "Typed lexicons as defined in github.com/bluesky-social/atproto",
   "type": "module",
   "exports": {
-    "./app/bsky/actor/defs": {
-      "development": "./lexicons/app/bsky/actor/defs.ts",
-      "types": "./dist/app/bsky/actor/defs.d.ts",
-      "import": "./dist/app/bsky/actor/defs.js"
-    },
-    "./app/bsky/actor/getPreferences": {
-      "development": "./lexicons/app/bsky/actor/getPreferences.ts",
-      "types": "./dist/app/bsky/actor/getPreferences.d.ts",
-      "import": "./dist/app/bsky/actor/getPreferences.js"
-    },
-    "./app/bsky/actor/getProfile": {
-      "development": "./lexicons/app/bsky/actor/getProfile.ts",
-      "types": "./dist/app/bsky/actor/getProfile.d.ts",
-      "import": "./dist/app/bsky/actor/getProfile.js"
-    },
-    "./app/bsky/actor/getProfiles": {
-      "development": "./lexicons/app/bsky/actor/getProfiles.ts",
-      "types": "./dist/app/bsky/actor/getProfiles.d.ts",
-      "import": "./dist/app/bsky/actor/getProfiles.js"
-    },
-    "./app/bsky/actor/getSuggestions": {
-      "development": "./lexicons/app/bsky/actor/getSuggestions.ts",
-      "types": "./dist/app/bsky/actor/getSuggestions.d.ts",
-      "import": "./dist/app/bsky/actor/getSuggestions.js"
-    },
-    "./app/bsky/actor/profile": {
-      "development": "./lexicons/app/bsky/actor/profile.ts",
-      "types": "./dist/app/bsky/actor/profile.d.ts",
-      "import": "./dist/app/bsky/actor/profile.js"
-    },
-    "./app/bsky/actor/putPreferences": {
-      "development": "./lexicons/app/bsky/actor/putPreferences.ts",
-      "types": "./dist/app/bsky/actor/putPreferences.d.ts",
-      "import": "./dist/app/bsky/actor/putPreferences.js"
-    },
-    "./app/bsky/actor/searchActors": {
-      "development": "./lexicons/app/bsky/actor/searchActors.ts",
-      "types": "./dist/app/bsky/actor/searchActors.d.ts",
-      "import": "./dist/app/bsky/actor/searchActors.js"
-    },
-    "./app/bsky/actor/searchActorsTypeahead": {
-      "development": "./lexicons/app/bsky/actor/searchActorsTypeahead.ts",
-      "types": "./dist/app/bsky/actor/searchActorsTypeahead.d.ts",
-      "import": "./dist/app/bsky/actor/searchActorsTypeahead.js"
-    },
-    "./app/bsky/actor/status": {
-      "development": "./lexicons/app/bsky/actor/status.ts",
-      "types": "./dist/app/bsky/actor/status.d.ts",
-      "import": "./dist/app/bsky/actor/status.js"
-    },
-    "./app/bsky/ageassurance/begin": {
-      "development": "./lexicons/app/bsky/ageassurance/begin.ts",
-      "types": "./dist/app/bsky/ageassurance/begin.d.ts",
-      "import": "./dist/app/bsky/ageassurance/begin.js"
-    },
-    "./app/bsky/ageassurance/defs": {
-      "development": "./lexicons/app/bsky/ageassurance/defs.ts",
-      "types": "./dist/app/bsky/ageassurance/defs.d.ts",
-      "import": "./dist/app/bsky/ageassurance/defs.js"
-    },
-    "./app/bsky/ageassurance/getConfig": {
-      "development": "./lexicons/app/bsky/ageassurance/getConfig.ts",
-      "types": "./dist/app/bsky/ageassurance/getConfig.d.ts",
-      "import": "./dist/app/bsky/ageassurance/getConfig.js"
-    },
-    "./app/bsky/ageassurance/getState": {
-      "development": "./lexicons/app/bsky/ageassurance/getState.ts",
-      "types": "./dist/app/bsky/ageassurance/getState.d.ts",
-      "import": "./dist/app/bsky/ageassurance/getState.js"
-    },
-    "./app/bsky/authCreatePosts": {
-      "development": "./lexicons/app/bsky/authCreatePosts.ts",
-      "types": "./dist/app/bsky/authCreatePosts.d.ts",
-      "import": "./dist/app/bsky/authCreatePosts.js"
-    },
-    "./app/bsky/authFullApp": {
-      "development": "./lexicons/app/bsky/authFullApp.ts",
-      "types": "./dist/app/bsky/authFullApp.d.ts",
-      "import": "./dist/app/bsky/authFullApp.js"
-    },
-    "./app/bsky/authManageFeedDeclaration": {
-      "development": "./lexicons/app/bsky/authManageFeedDeclaration.ts",
-      "types": "./dist/app/bsky/authManageFeedDeclaration.d.ts",
-      "import": "./dist/app/bsky/authManageFeedDeclaration.js"
-    },
-    "./app/bsky/authManageLabelerService": {
-      "development": "./lexicons/app/bsky/authManageLabelerService.ts",
-      "types": "./dist/app/bsky/authManageLabelerService.d.ts",
-      "import": "./dist/app/bsky/authManageLabelerService.js"
-    },
-    "./app/bsky/authManageModeration": {
-      "development": "./lexicons/app/bsky/authManageModeration.ts",
-      "types": "./dist/app/bsky/authManageModeration.d.ts",
-      "import": "./dist/app/bsky/authManageModeration.js"
-    },
-    "./app/bsky/authManageNotifications": {
-      "development": "./lexicons/app/bsky/authManageNotifications.ts",
-      "types": "./dist/app/bsky/authManageNotifications.d.ts",
-      "import": "./dist/app/bsky/authManageNotifications.js"
-    },
-    "./app/bsky/authManageProfile": {
-      "development": "./lexicons/app/bsky/authManageProfile.ts",
-      "types": "./dist/app/bsky/authManageProfile.d.ts",
-      "import": "./dist/app/bsky/authManageProfile.js"
-    },
-    "./app/bsky/authViewAll": {
-      "development": "./lexicons/app/bsky/authViewAll.ts",
-      "types": "./dist/app/bsky/authViewAll.d.ts",
-      "import": "./dist/app/bsky/authViewAll.js"
-    },
-    "./app/bsky/bookmark/createBookmark": {
-      "development": "./lexicons/app/bsky/bookmark/createBookmark.ts",
-      "types": "./dist/app/bsky/bookmark/createBookmark.d.ts",
-      "import": "./dist/app/bsky/bookmark/createBookmark.js"
-    },
-    "./app/bsky/bookmark/defs": {
-      "development": "./lexicons/app/bsky/bookmark/defs.ts",
-      "types": "./dist/app/bsky/bookmark/defs.d.ts",
-      "import": "./dist/app/bsky/bookmark/defs.js"
-    },
-    "./app/bsky/bookmark/deleteBookmark": {
-      "development": "./lexicons/app/bsky/bookmark/deleteBookmark.ts",
-      "types": "./dist/app/bsky/bookmark/deleteBookmark.d.ts",
-      "import": "./dist/app/bsky/bookmark/deleteBookmark.js"
-    },
-    "./app/bsky/bookmark/getBookmarks": {
-      "development": "./lexicons/app/bsky/bookmark/getBookmarks.ts",
-      "types": "./dist/app/bsky/bookmark/getBookmarks.d.ts",
-      "import": "./dist/app/bsky/bookmark/getBookmarks.js"
-    },
-    "./app/bsky/contact/defs": {
-      "development": "./lexicons/app/bsky/contact/defs.ts",
-      "types": "./dist/app/bsky/contact/defs.d.ts",
-      "import": "./dist/app/bsky/contact/defs.js"
-    },
-    "./app/bsky/contact/dismissMatch": {
-      "development": "./lexicons/app/bsky/contact/dismissMatch.ts",
-      "types": "./dist/app/bsky/contact/dismissMatch.d.ts",
-      "import": "./dist/app/bsky/contact/dismissMatch.js"
-    },
-    "./app/bsky/contact/getMatches": {
-      "development": "./lexicons/app/bsky/contact/getMatches.ts",
-      "types": "./dist/app/bsky/contact/getMatches.d.ts",
-      "import": "./dist/app/bsky/contact/getMatches.js"
-    },
-    "./app/bsky/contact/getSyncStatus": {
-      "development": "./lexicons/app/bsky/contact/getSyncStatus.ts",
-      "types": "./dist/app/bsky/contact/getSyncStatus.d.ts",
-      "import": "./dist/app/bsky/contact/getSyncStatus.js"
-    },
-    "./app/bsky/contact/importContacts": {
-      "development": "./lexicons/app/bsky/contact/importContacts.ts",
-      "types": "./dist/app/bsky/contact/importContacts.d.ts",
-      "import": "./dist/app/bsky/contact/importContacts.js"
-    },
-    "./app/bsky/contact/removeData": {
-      "development": "./lexicons/app/bsky/contact/removeData.ts",
-      "types": "./dist/app/bsky/contact/removeData.d.ts",
-      "import": "./dist/app/bsky/contact/removeData.js"
-    },
-    "./app/bsky/contact/sendNotification": {
-      "development": "./lexicons/app/bsky/contact/sendNotification.ts",
-      "types": "./dist/app/bsky/contact/sendNotification.d.ts",
-      "import": "./dist/app/bsky/contact/sendNotification.js"
-    },
-    "./app/bsky/contact/startPhoneVerification": {
-      "development": "./lexicons/app/bsky/contact/startPhoneVerification.ts",
-      "types": "./dist/app/bsky/contact/startPhoneVerification.d.ts",
-      "import": "./dist/app/bsky/contact/startPhoneVerification.js"
-    },
-    "./app/bsky/contact/verifyPhone": {
-      "development": "./lexicons/app/bsky/contact/verifyPhone.ts",
-      "types": "./dist/app/bsky/contact/verifyPhone.d.ts",
-      "import": "./dist/app/bsky/contact/verifyPhone.js"
-    },
-    "./app/bsky/draft/createDraft": {
-      "development": "./lexicons/app/bsky/draft/createDraft.ts",
-      "types": "./dist/app/bsky/draft/createDraft.d.ts",
-      "import": "./dist/app/bsky/draft/createDraft.js"
-    },
-    "./app/bsky/draft/defs": {
-      "development": "./lexicons/app/bsky/draft/defs.ts",
-      "types": "./dist/app/bsky/draft/defs.d.ts",
-      "import": "./dist/app/bsky/draft/defs.js"
-    },
-    "./app/bsky/draft/deleteDraft": {
-      "development": "./lexicons/app/bsky/draft/deleteDraft.ts",
-      "types": "./dist/app/bsky/draft/deleteDraft.d.ts",
-      "import": "./dist/app/bsky/draft/deleteDraft.js"
-    },
-    "./app/bsky/draft/getDrafts": {
-      "development": "./lexicons/app/bsky/draft/getDrafts.ts",
-      "types": "./dist/app/bsky/draft/getDrafts.d.ts",
-      "import": "./dist/app/bsky/draft/getDrafts.js"
-    },
-    "./app/bsky/draft/updateDraft": {
-      "development": "./lexicons/app/bsky/draft/updateDraft.ts",
-      "types": "./dist/app/bsky/draft/updateDraft.d.ts",
-      "import": "./dist/app/bsky/draft/updateDraft.js"
-    },
-    "./app/bsky/embed/defs": {
-      "development": "./lexicons/app/bsky/embed/defs.ts",
-      "types": "./dist/app/bsky/embed/defs.d.ts",
-      "import": "./dist/app/bsky/embed/defs.js"
-    },
-    "./app/bsky/embed/external": {
-      "development": "./lexicons/app/bsky/embed/external.ts",
-      "types": "./dist/app/bsky/embed/external.d.ts",
-      "import": "./dist/app/bsky/embed/external.js"
-    },
-    "./app/bsky/embed/images": {
-      "development": "./lexicons/app/bsky/embed/images.ts",
-      "types": "./dist/app/bsky/embed/images.d.ts",
-      "import": "./dist/app/bsky/embed/images.js"
-    },
-    "./app/bsky/embed/record": {
-      "development": "./lexicons/app/bsky/embed/record.ts",
-      "types": "./dist/app/bsky/embed/record.d.ts",
-      "import": "./dist/app/bsky/embed/record.js"
-    },
-    "./app/bsky/embed/recordWithMedia": {
-      "development": "./lexicons/app/bsky/embed/recordWithMedia.ts",
-      "types": "./dist/app/bsky/embed/recordWithMedia.d.ts",
-      "import": "./dist/app/bsky/embed/recordWithMedia.js"
-    },
-    "./app/bsky/embed/video": {
-      "development": "./lexicons/app/bsky/embed/video.ts",
-      "types": "./dist/app/bsky/embed/video.d.ts",
-      "import": "./dist/app/bsky/embed/video.js"
-    },
-    "./app/bsky/feed/defs": {
-      "development": "./lexicons/app/bsky/feed/defs.ts",
-      "types": "./dist/app/bsky/feed/defs.d.ts",
-      "import": "./dist/app/bsky/feed/defs.js"
-    },
-    "./app/bsky/feed/describeFeedGenerator": {
-      "development": "./lexicons/app/bsky/feed/describeFeedGenerator.ts",
-      "types": "./dist/app/bsky/feed/describeFeedGenerator.d.ts",
-      "import": "./dist/app/bsky/feed/describeFeedGenerator.js"
-    },
-    "./app/bsky/feed/generator": {
-      "development": "./lexicons/app/bsky/feed/generator.ts",
-      "types": "./dist/app/bsky/feed/generator.d.ts",
-      "import": "./dist/app/bsky/feed/generator.js"
-    },
-    "./app/bsky/feed/getActorFeeds": {
-      "development": "./lexicons/app/bsky/feed/getActorFeeds.ts",
-      "types": "./dist/app/bsky/feed/getActorFeeds.d.ts",
-      "import": "./dist/app/bsky/feed/getActorFeeds.js"
-    },
-    "./app/bsky/feed/getActorLikes": {
-      "development": "./lexicons/app/bsky/feed/getActorLikes.ts",
-      "types": "./dist/app/bsky/feed/getActorLikes.d.ts",
-      "import": "./dist/app/bsky/feed/getActorLikes.js"
-    },
-    "./app/bsky/feed/getAuthorFeed": {
-      "development": "./lexicons/app/bsky/feed/getAuthorFeed.ts",
-      "types": "./dist/app/bsky/feed/getAuthorFeed.d.ts",
-      "import": "./dist/app/bsky/feed/getAuthorFeed.js"
-    },
-    "./app/bsky/feed/getFeed": {
-      "development": "./lexicons/app/bsky/feed/getFeed.ts",
-      "types": "./dist/app/bsky/feed/getFeed.d.ts",
-      "import": "./dist/app/bsky/feed/getFeed.js"
-    },
-    "./app/bsky/feed/getFeedGenerator": {
-      "development": "./lexicons/app/bsky/feed/getFeedGenerator.ts",
-      "types": "./dist/app/bsky/feed/getFeedGenerator.d.ts",
-      "import": "./dist/app/bsky/feed/getFeedGenerator.js"
-    },
-    "./app/bsky/feed/getFeedGenerators": {
-      "development": "./lexicons/app/bsky/feed/getFeedGenerators.ts",
-      "types": "./dist/app/bsky/feed/getFeedGenerators.d.ts",
-      "import": "./dist/app/bsky/feed/getFeedGenerators.js"
-    },
-    "./app/bsky/feed/getFeedSkeleton": {
-      "development": "./lexicons/app/bsky/feed/getFeedSkeleton.ts",
-      "types": "./dist/app/bsky/feed/getFeedSkeleton.d.ts",
-      "import": "./dist/app/bsky/feed/getFeedSkeleton.js"
-    },
-    "./app/bsky/feed/getLikes": {
-      "development": "./lexicons/app/bsky/feed/getLikes.ts",
-      "types": "./dist/app/bsky/feed/getLikes.d.ts",
-      "import": "./dist/app/bsky/feed/getLikes.js"
-    },
-    "./app/bsky/feed/getListFeed": {
-      "development": "./lexicons/app/bsky/feed/getListFeed.ts",
-      "types": "./dist/app/bsky/feed/getListFeed.d.ts",
-      "import": "./dist/app/bsky/feed/getListFeed.js"
-    },
-    "./app/bsky/feed/getPostThread": {
-      "development": "./lexicons/app/bsky/feed/getPostThread.ts",
-      "types": "./dist/app/bsky/feed/getPostThread.d.ts",
-      "import": "./dist/app/bsky/feed/getPostThread.js"
-    },
-    "./app/bsky/feed/getPosts": {
-      "development": "./lexicons/app/bsky/feed/getPosts.ts",
-      "types": "./dist/app/bsky/feed/getPosts.d.ts",
-      "import": "./dist/app/bsky/feed/getPosts.js"
-    },
-    "./app/bsky/feed/getQuotes": {
-      "development": "./lexicons/app/bsky/feed/getQuotes.ts",
-      "types": "./dist/app/bsky/feed/getQuotes.d.ts",
-      "import": "./dist/app/bsky/feed/getQuotes.js"
-    },
-    "./app/bsky/feed/getRepostedBy": {
-      "development": "./lexicons/app/bsky/feed/getRepostedBy.ts",
-      "types": "./dist/app/bsky/feed/getRepostedBy.d.ts",
-      "import": "./dist/app/bsky/feed/getRepostedBy.js"
-    },
-    "./app/bsky/feed/getSuggestedFeeds": {
-      "development": "./lexicons/app/bsky/feed/getSuggestedFeeds.ts",
-      "types": "./dist/app/bsky/feed/getSuggestedFeeds.d.ts",
-      "import": "./dist/app/bsky/feed/getSuggestedFeeds.js"
-    },
-    "./app/bsky/feed/getTimeline": {
-      "development": "./lexicons/app/bsky/feed/getTimeline.ts",
-      "types": "./dist/app/bsky/feed/getTimeline.d.ts",
-      "import": "./dist/app/bsky/feed/getTimeline.js"
-    },
-    "./app/bsky/feed/like": {
-      "development": "./lexicons/app/bsky/feed/like.ts",
-      "types": "./dist/app/bsky/feed/like.d.ts",
-      "import": "./dist/app/bsky/feed/like.js"
-    },
-    "./app/bsky/feed/post": {
-      "development": "./lexicons/app/bsky/feed/post.ts",
-      "types": "./dist/app/bsky/feed/post.d.ts",
-      "import": "./dist/app/bsky/feed/post.js"
-    },
-    "./app/bsky/feed/postgate": {
-      "development": "./lexicons/app/bsky/feed/postgate.ts",
-      "types": "./dist/app/bsky/feed/postgate.d.ts",
-      "import": "./dist/app/bsky/feed/postgate.js"
-    },
-    "./app/bsky/feed/repost": {
-      "development": "./lexicons/app/bsky/feed/repost.ts",
-      "types": "./dist/app/bsky/feed/repost.d.ts",
-      "import": "./dist/app/bsky/feed/repost.js"
-    },
-    "./app/bsky/feed/searchPosts": {
-      "development": "./lexicons/app/bsky/feed/searchPosts.ts",
-      "types": "./dist/app/bsky/feed/searchPosts.d.ts",
-      "import": "./dist/app/bsky/feed/searchPosts.js"
-    },
-    "./app/bsky/feed/sendInteractions": {
-      "development": "./lexicons/app/bsky/feed/sendInteractions.ts",
-      "types": "./dist/app/bsky/feed/sendInteractions.d.ts",
-      "import": "./dist/app/bsky/feed/sendInteractions.js"
-    },
-    "./app/bsky/feed/threadgate": {
-      "development": "./lexicons/app/bsky/feed/threadgate.ts",
-      "types": "./dist/app/bsky/feed/threadgate.d.ts",
-      "import": "./dist/app/bsky/feed/threadgate.js"
-    },
-    "./app/bsky/graph/block": {
-      "development": "./lexicons/app/bsky/graph/block.ts",
-      "types": "./dist/app/bsky/graph/block.d.ts",
-      "import": "./dist/app/bsky/graph/block.js"
-    },
-    "./app/bsky/graph/defs": {
-      "development": "./lexicons/app/bsky/graph/defs.ts",
-      "types": "./dist/app/bsky/graph/defs.d.ts",
-      "import": "./dist/app/bsky/graph/defs.js"
-    },
-    "./app/bsky/graph/follow": {
-      "development": "./lexicons/app/bsky/graph/follow.ts",
-      "types": "./dist/app/bsky/graph/follow.d.ts",
-      "import": "./dist/app/bsky/graph/follow.js"
-    },
-    "./app/bsky/graph/getActorStarterPacks": {
-      "development": "./lexicons/app/bsky/graph/getActorStarterPacks.ts",
-      "types": "./dist/app/bsky/graph/getActorStarterPacks.d.ts",
-      "import": "./dist/app/bsky/graph/getActorStarterPacks.js"
-    },
-    "./app/bsky/graph/getBlocks": {
-      "development": "./lexicons/app/bsky/graph/getBlocks.ts",
-      "types": "./dist/app/bsky/graph/getBlocks.d.ts",
-      "import": "./dist/app/bsky/graph/getBlocks.js"
-    },
-    "./app/bsky/graph/getFollowers": {
-      "development": "./lexicons/app/bsky/graph/getFollowers.ts",
-      "types": "./dist/app/bsky/graph/getFollowers.d.ts",
-      "import": "./dist/app/bsky/graph/getFollowers.js"
-    },
-    "./app/bsky/graph/getFollows": {
-      "development": "./lexicons/app/bsky/graph/getFollows.ts",
-      "types": "./dist/app/bsky/graph/getFollows.d.ts",
-      "import": "./dist/app/bsky/graph/getFollows.js"
-    },
-    "./app/bsky/graph/getKnownFollowers": {
-      "development": "./lexicons/app/bsky/graph/getKnownFollowers.ts",
-      "types": "./dist/app/bsky/graph/getKnownFollowers.d.ts",
-      "import": "./dist/app/bsky/graph/getKnownFollowers.js"
-    },
-    "./app/bsky/graph/getList": {
-      "development": "./lexicons/app/bsky/graph/getList.ts",
-      "types": "./dist/app/bsky/graph/getList.d.ts",
-      "import": "./dist/app/bsky/graph/getList.js"
-    },
-    "./app/bsky/graph/getListBlocks": {
-      "development": "./lexicons/app/bsky/graph/getListBlocks.ts",
-      "types": "./dist/app/bsky/graph/getListBlocks.d.ts",
-      "import": "./dist/app/bsky/graph/getListBlocks.js"
-    },
-    "./app/bsky/graph/getListMutes": {
-      "development": "./lexicons/app/bsky/graph/getListMutes.ts",
-      "types": "./dist/app/bsky/graph/getListMutes.d.ts",
-      "import": "./dist/app/bsky/graph/getListMutes.js"
-    },
-    "./app/bsky/graph/getLists": {
-      "development": "./lexicons/app/bsky/graph/getLists.ts",
-      "types": "./dist/app/bsky/graph/getLists.d.ts",
-      "import": "./dist/app/bsky/graph/getLists.js"
-    },
-    "./app/bsky/graph/getListsWithMembership": {
-      "development": "./lexicons/app/bsky/graph/getListsWithMembership.ts",
-      "types": "./dist/app/bsky/graph/getListsWithMembership.d.ts",
-      "import": "./dist/app/bsky/graph/getListsWithMembership.js"
-    },
-    "./app/bsky/graph/getMutes": {
-      "development": "./lexicons/app/bsky/graph/getMutes.ts",
-      "types": "./dist/app/bsky/graph/getMutes.d.ts",
-      "import": "./dist/app/bsky/graph/getMutes.js"
-    },
-    "./app/bsky/graph/getRelationships": {
-      "development": "./lexicons/app/bsky/graph/getRelationships.ts",
-      "types": "./dist/app/bsky/graph/getRelationships.d.ts",
-      "import": "./dist/app/bsky/graph/getRelationships.js"
-    },
-    "./app/bsky/graph/getStarterPack": {
-      "development": "./lexicons/app/bsky/graph/getStarterPack.ts",
-      "types": "./dist/app/bsky/graph/getStarterPack.d.ts",
-      "import": "./dist/app/bsky/graph/getStarterPack.js"
-    },
-    "./app/bsky/graph/getStarterPacks": {
-      "development": "./lexicons/app/bsky/graph/getStarterPacks.ts",
-      "types": "./dist/app/bsky/graph/getStarterPacks.d.ts",
-      "import": "./dist/app/bsky/graph/getStarterPacks.js"
-    },
-    "./app/bsky/graph/getStarterPacksWithMembership": {
-      "development": "./lexicons/app/bsky/graph/getStarterPacksWithMembership.ts",
-      "types": "./dist/app/bsky/graph/getStarterPacksWithMembership.d.ts",
-      "import": "./dist/app/bsky/graph/getStarterPacksWithMembership.js"
-    },
-    "./app/bsky/graph/getSuggestedFollowsByActor": {
-      "development": "./lexicons/app/bsky/graph/getSuggestedFollowsByActor.ts",
-      "types": "./dist/app/bsky/graph/getSuggestedFollowsByActor.d.ts",
-      "import": "./dist/app/bsky/graph/getSuggestedFollowsByActor.js"
-    },
-    "./app/bsky/graph/list": {
-      "development": "./lexicons/app/bsky/graph/list.ts",
-      "types": "./dist/app/bsky/graph/list.d.ts",
-      "import": "./dist/app/bsky/graph/list.js"
-    },
-    "./app/bsky/graph/listblock": {
-      "development": "./lexicons/app/bsky/graph/listblock.ts",
-      "types": "./dist/app/bsky/graph/listblock.d.ts",
-      "import": "./dist/app/bsky/graph/listblock.js"
-    },
-    "./app/bsky/graph/listitem": {
-      "development": "./lexicons/app/bsky/graph/listitem.ts",
-      "types": "./dist/app/bsky/graph/listitem.d.ts",
-      "import": "./dist/app/bsky/graph/listitem.js"
-    },
-    "./app/bsky/graph/muteActor": {
-      "development": "./lexicons/app/bsky/graph/muteActor.ts",
-      "types": "./dist/app/bsky/graph/muteActor.d.ts",
-      "import": "./dist/app/bsky/graph/muteActor.js"
-    },
-    "./app/bsky/graph/muteActorList": {
-      "development": "./lexicons/app/bsky/graph/muteActorList.ts",
-      "types": "./dist/app/bsky/graph/muteActorList.d.ts",
-      "import": "./dist/app/bsky/graph/muteActorList.js"
-    },
-    "./app/bsky/graph/muteThread": {
-      "development": "./lexicons/app/bsky/graph/muteThread.ts",
-      "types": "./dist/app/bsky/graph/muteThread.d.ts",
-      "import": "./dist/app/bsky/graph/muteThread.js"
-    },
-    "./app/bsky/graph/searchStarterPacks": {
-      "development": "./lexicons/app/bsky/graph/searchStarterPacks.ts",
-      "types": "./dist/app/bsky/graph/searchStarterPacks.d.ts",
-      "import": "./dist/app/bsky/graph/searchStarterPacks.js"
-    },
-    "./app/bsky/graph/starterpack": {
-      "development": "./lexicons/app/bsky/graph/starterpack.ts",
-      "types": "./dist/app/bsky/graph/starterpack.d.ts",
-      "import": "./dist/app/bsky/graph/starterpack.js"
-    },
-    "./app/bsky/graph/unmuteActor": {
-      "development": "./lexicons/app/bsky/graph/unmuteActor.ts",
-      "types": "./dist/app/bsky/graph/unmuteActor.d.ts",
-      "import": "./dist/app/bsky/graph/unmuteActor.js"
-    },
-    "./app/bsky/graph/unmuteActorList": {
-      "development": "./lexicons/app/bsky/graph/unmuteActorList.ts",
-      "types": "./dist/app/bsky/graph/unmuteActorList.d.ts",
-      "import": "./dist/app/bsky/graph/unmuteActorList.js"
-    },
-    "./app/bsky/graph/unmuteThread": {
-      "development": "./lexicons/app/bsky/graph/unmuteThread.ts",
-      "types": "./dist/app/bsky/graph/unmuteThread.d.ts",
-      "import": "./dist/app/bsky/graph/unmuteThread.js"
-    },
-    "./app/bsky/graph/verification": {
-      "development": "./lexicons/app/bsky/graph/verification.ts",
-      "types": "./dist/app/bsky/graph/verification.d.ts",
-      "import": "./dist/app/bsky/graph/verification.js"
-    },
-    "./app/bsky/labeler/defs": {
-      "development": "./lexicons/app/bsky/labeler/defs.ts",
-      "types": "./dist/app/bsky/labeler/defs.d.ts",
-      "import": "./dist/app/bsky/labeler/defs.js"
-    },
-    "./app/bsky/labeler/getServices": {
-      "development": "./lexicons/app/bsky/labeler/getServices.ts",
-      "types": "./dist/app/bsky/labeler/getServices.d.ts",
-      "import": "./dist/app/bsky/labeler/getServices.js"
-    },
-    "./app/bsky/labeler/service": {
-      "development": "./lexicons/app/bsky/labeler/service.ts",
-      "types": "./dist/app/bsky/labeler/service.d.ts",
-      "import": "./dist/app/bsky/labeler/service.js"
-    },
-    "./app/bsky/notification/declaration": {
-      "development": "./lexicons/app/bsky/notification/declaration.ts",
-      "types": "./dist/app/bsky/notification/declaration.d.ts",
-      "import": "./dist/app/bsky/notification/declaration.js"
-    },
-    "./app/bsky/notification/defs": {
-      "development": "./lexicons/app/bsky/notification/defs.ts",
-      "types": "./dist/app/bsky/notification/defs.d.ts",
-      "import": "./dist/app/bsky/notification/defs.js"
-    },
-    "./app/bsky/notification/getPreferences": {
-      "development": "./lexicons/app/bsky/notification/getPreferences.ts",
-      "types": "./dist/app/bsky/notification/getPreferences.d.ts",
-      "import": "./dist/app/bsky/notification/getPreferences.js"
-    },
-    "./app/bsky/notification/getUnreadCount": {
-      "development": "./lexicons/app/bsky/notification/getUnreadCount.ts",
-      "types": "./dist/app/bsky/notification/getUnreadCount.d.ts",
-      "import": "./dist/app/bsky/notification/getUnreadCount.js"
-    },
-    "./app/bsky/notification/listActivitySubscriptions": {
-      "development": "./lexicons/app/bsky/notification/listActivitySubscriptions.ts",
-      "types": "./dist/app/bsky/notification/listActivitySubscriptions.d.ts",
-      "import": "./dist/app/bsky/notification/listActivitySubscriptions.js"
-    },
-    "./app/bsky/notification/listNotifications": {
-      "development": "./lexicons/app/bsky/notification/listNotifications.ts",
-      "types": "./dist/app/bsky/notification/listNotifications.d.ts",
-      "import": "./dist/app/bsky/notification/listNotifications.js"
-    },
-    "./app/bsky/notification/putActivitySubscription": {
-      "development": "./lexicons/app/bsky/notification/putActivitySubscription.ts",
-      "types": "./dist/app/bsky/notification/putActivitySubscription.d.ts",
-      "import": "./dist/app/bsky/notification/putActivitySubscription.js"
-    },
-    "./app/bsky/notification/putPreferences": {
-      "development": "./lexicons/app/bsky/notification/putPreferences.ts",
-      "types": "./dist/app/bsky/notification/putPreferences.d.ts",
-      "import": "./dist/app/bsky/notification/putPreferences.js"
-    },
-    "./app/bsky/notification/putPreferencesV2": {
-      "development": "./lexicons/app/bsky/notification/putPreferencesV2.ts",
-      "types": "./dist/app/bsky/notification/putPreferencesV2.d.ts",
-      "import": "./dist/app/bsky/notification/putPreferencesV2.js"
-    },
-    "./app/bsky/notification/registerPush": {
-      "development": "./lexicons/app/bsky/notification/registerPush.ts",
-      "types": "./dist/app/bsky/notification/registerPush.d.ts",
-      "import": "./dist/app/bsky/notification/registerPush.js"
-    },
-    "./app/bsky/notification/unregisterPush": {
-      "development": "./lexicons/app/bsky/notification/unregisterPush.ts",
-      "types": "./dist/app/bsky/notification/unregisterPush.d.ts",
-      "import": "./dist/app/bsky/notification/unregisterPush.js"
-    },
-    "./app/bsky/notification/updateSeen": {
-      "development": "./lexicons/app/bsky/notification/updateSeen.ts",
-      "types": "./dist/app/bsky/notification/updateSeen.d.ts",
-      "import": "./dist/app/bsky/notification/updateSeen.js"
-    },
-    "./app/bsky/richtext/facet": {
-      "development": "./lexicons/app/bsky/richtext/facet.ts",
-      "types": "./dist/app/bsky/richtext/facet.d.ts",
-      "import": "./dist/app/bsky/richtext/facet.js"
-    },
-    "./app/bsky/unspecced/defs": {
-      "development": "./lexicons/app/bsky/unspecced/defs.ts",
-      "types": "./dist/app/bsky/unspecced/defs.d.ts",
-      "import": "./dist/app/bsky/unspecced/defs.js"
-    },
-    "./app/bsky/unspecced/getAgeAssuranceState": {
-      "development": "./lexicons/app/bsky/unspecced/getAgeAssuranceState.ts",
-      "types": "./dist/app/bsky/unspecced/getAgeAssuranceState.d.ts",
-      "import": "./dist/app/bsky/unspecced/getAgeAssuranceState.js"
-    },
-    "./app/bsky/unspecced/getConfig": {
-      "development": "./lexicons/app/bsky/unspecced/getConfig.ts",
-      "types": "./dist/app/bsky/unspecced/getConfig.d.ts",
-      "import": "./dist/app/bsky/unspecced/getConfig.js"
-    },
-    "./app/bsky/unspecced/getOnboardingSuggestedStarterPacks": {
-      "development": "./lexicons/app/bsky/unspecced/getOnboardingSuggestedStarterPacks.ts",
-      "types": "./dist/app/bsky/unspecced/getOnboardingSuggestedStarterPacks.d.ts",
-      "import": "./dist/app/bsky/unspecced/getOnboardingSuggestedStarterPacks.js"
-    },
-    "./app/bsky/unspecced/getOnboardingSuggestedStarterPacksSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/getOnboardingSuggestedStarterPacksSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/getOnboardingSuggestedStarterPacksSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/getOnboardingSuggestedStarterPacksSkeleton.js"
-    },
-    "./app/bsky/unspecced/getPopularFeedGenerators": {
-      "development": "./lexicons/app/bsky/unspecced/getPopularFeedGenerators.ts",
-      "types": "./dist/app/bsky/unspecced/getPopularFeedGenerators.d.ts",
-      "import": "./dist/app/bsky/unspecced/getPopularFeedGenerators.js"
-    },
-    "./app/bsky/unspecced/getPostThreadOtherV2": {
-      "development": "./lexicons/app/bsky/unspecced/getPostThreadOtherV2.ts",
-      "types": "./dist/app/bsky/unspecced/getPostThreadOtherV2.d.ts",
-      "import": "./dist/app/bsky/unspecced/getPostThreadOtherV2.js"
-    },
-    "./app/bsky/unspecced/getPostThreadV2": {
-      "development": "./lexicons/app/bsky/unspecced/getPostThreadV2.ts",
-      "types": "./dist/app/bsky/unspecced/getPostThreadV2.d.ts",
-      "import": "./dist/app/bsky/unspecced/getPostThreadV2.js"
-    },
-    "./app/bsky/unspecced/getSuggestedFeeds": {
-      "development": "./lexicons/app/bsky/unspecced/getSuggestedFeeds.ts",
-      "types": "./dist/app/bsky/unspecced/getSuggestedFeeds.d.ts",
-      "import": "./dist/app/bsky/unspecced/getSuggestedFeeds.js"
-    },
-    "./app/bsky/unspecced/getSuggestedFeedsSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/getSuggestedFeedsSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/getSuggestedFeedsSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/getSuggestedFeedsSkeleton.js"
-    },
-    "./app/bsky/unspecced/getSuggestedStarterPacks": {
-      "development": "./lexicons/app/bsky/unspecced/getSuggestedStarterPacks.ts",
-      "types": "./dist/app/bsky/unspecced/getSuggestedStarterPacks.d.ts",
-      "import": "./dist/app/bsky/unspecced/getSuggestedStarterPacks.js"
-    },
-    "./app/bsky/unspecced/getSuggestedStarterPacksSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/getSuggestedStarterPacksSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/getSuggestedStarterPacksSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/getSuggestedStarterPacksSkeleton.js"
-    },
-    "./app/bsky/unspecced/getSuggestedUsers": {
-      "development": "./lexicons/app/bsky/unspecced/getSuggestedUsers.ts",
-      "types": "./dist/app/bsky/unspecced/getSuggestedUsers.d.ts",
-      "import": "./dist/app/bsky/unspecced/getSuggestedUsers.js"
-    },
-    "./app/bsky/unspecced/getSuggestedUsersSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/getSuggestedUsersSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/getSuggestedUsersSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/getSuggestedUsersSkeleton.js"
-    },
-    "./app/bsky/unspecced/getSuggestionsSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/getSuggestionsSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/getSuggestionsSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/getSuggestionsSkeleton.js"
-    },
-    "./app/bsky/unspecced/getTaggedSuggestions": {
-      "development": "./lexicons/app/bsky/unspecced/getTaggedSuggestions.ts",
-      "types": "./dist/app/bsky/unspecced/getTaggedSuggestions.d.ts",
-      "import": "./dist/app/bsky/unspecced/getTaggedSuggestions.js"
-    },
-    "./app/bsky/unspecced/getTrendingTopics": {
-      "development": "./lexicons/app/bsky/unspecced/getTrendingTopics.ts",
-      "types": "./dist/app/bsky/unspecced/getTrendingTopics.d.ts",
-      "import": "./dist/app/bsky/unspecced/getTrendingTopics.js"
-    },
-    "./app/bsky/unspecced/getTrends": {
-      "development": "./lexicons/app/bsky/unspecced/getTrends.ts",
-      "types": "./dist/app/bsky/unspecced/getTrends.d.ts",
-      "import": "./dist/app/bsky/unspecced/getTrends.js"
-    },
-    "./app/bsky/unspecced/getTrendsSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/getTrendsSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/getTrendsSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/getTrendsSkeleton.js"
-    },
-    "./app/bsky/unspecced/initAgeAssurance": {
-      "development": "./lexicons/app/bsky/unspecced/initAgeAssurance.ts",
-      "types": "./dist/app/bsky/unspecced/initAgeAssurance.d.ts",
-      "import": "./dist/app/bsky/unspecced/initAgeAssurance.js"
-    },
-    "./app/bsky/unspecced/searchActorsSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/searchActorsSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/searchActorsSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/searchActorsSkeleton.js"
-    },
-    "./app/bsky/unspecced/searchPostsSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/searchPostsSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/searchPostsSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/searchPostsSkeleton.js"
-    },
-    "./app/bsky/unspecced/searchStarterPacksSkeleton": {
-      "development": "./lexicons/app/bsky/unspecced/searchStarterPacksSkeleton.ts",
-      "types": "./dist/app/bsky/unspecced/searchStarterPacksSkeleton.d.ts",
-      "import": "./dist/app/bsky/unspecced/searchStarterPacksSkeleton.js"
-    },
-    "./app/bsky/video/defs": {
-      "development": "./lexicons/app/bsky/video/defs.ts",
-      "types": "./dist/app/bsky/video/defs.d.ts",
-      "import": "./dist/app/bsky/video/defs.js"
-    },
-    "./app/bsky/video/getJobStatus": {
-      "development": "./lexicons/app/bsky/video/getJobStatus.ts",
-      "types": "./dist/app/bsky/video/getJobStatus.d.ts",
-      "import": "./dist/app/bsky/video/getJobStatus.js"
-    },
-    "./app/bsky/video/getUploadLimits": {
-      "development": "./lexicons/app/bsky/video/getUploadLimits.ts",
-      "types": "./dist/app/bsky/video/getUploadLimits.d.ts",
-      "import": "./dist/app/bsky/video/getUploadLimits.js"
-    },
-    "./app/bsky/video/uploadVideo": {
-      "development": "./lexicons/app/bsky/video/uploadVideo.ts",
-      "types": "./dist/app/bsky/video/uploadVideo.d.ts",
-      "import": "./dist/app/bsky/video/uploadVideo.js"
-    },
-    "./chat/bsky/actor/declaration": {
-      "development": "./lexicons/chat/bsky/actor/declaration.ts",
-      "types": "./dist/chat/bsky/actor/declaration.d.ts",
-      "import": "./dist/chat/bsky/actor/declaration.js"
-    },
-    "./chat/bsky/actor/defs": {
-      "development": "./lexicons/chat/bsky/actor/defs.ts",
-      "types": "./dist/chat/bsky/actor/defs.d.ts",
-      "import": "./dist/chat/bsky/actor/defs.js"
-    },
-    "./chat/bsky/actor/deleteAccount": {
-      "development": "./lexicons/chat/bsky/actor/deleteAccount.ts",
-      "types": "./dist/chat/bsky/actor/deleteAccount.d.ts",
-      "import": "./dist/chat/bsky/actor/deleteAccount.js"
-    },
-    "./chat/bsky/actor/exportAccountData": {
-      "development": "./lexicons/chat/bsky/actor/exportAccountData.ts",
-      "types": "./dist/chat/bsky/actor/exportAccountData.d.ts",
-      "import": "./dist/chat/bsky/actor/exportAccountData.js"
-    },
-    "./chat/bsky/authFullChatClient": {
-      "development": "./lexicons/chat/bsky/authFullChatClient.ts",
-      "types": "./dist/chat/bsky/authFullChatClient.d.ts",
-      "import": "./dist/chat/bsky/authFullChatClient.js"
-    },
-    "./chat/bsky/convo/acceptConvo": {
-      "development": "./lexicons/chat/bsky/convo/acceptConvo.ts",
-      "types": "./dist/chat/bsky/convo/acceptConvo.d.ts",
-      "import": "./dist/chat/bsky/convo/acceptConvo.js"
-    },
-    "./chat/bsky/convo/addReaction": {
-      "development": "./lexicons/chat/bsky/convo/addReaction.ts",
-      "types": "./dist/chat/bsky/convo/addReaction.d.ts",
-      "import": "./dist/chat/bsky/convo/addReaction.js"
-    },
-    "./chat/bsky/convo/defs": {
-      "development": "./lexicons/chat/bsky/convo/defs.ts",
-      "types": "./dist/chat/bsky/convo/defs.d.ts",
-      "import": "./dist/chat/bsky/convo/defs.js"
-    },
-    "./chat/bsky/convo/deleteMessageForSelf": {
-      "development": "./lexicons/chat/bsky/convo/deleteMessageForSelf.ts",
-      "types": "./dist/chat/bsky/convo/deleteMessageForSelf.d.ts",
-      "import": "./dist/chat/bsky/convo/deleteMessageForSelf.js"
-    },
-    "./chat/bsky/convo/getConvo": {
-      "development": "./lexicons/chat/bsky/convo/getConvo.ts",
-      "types": "./dist/chat/bsky/convo/getConvo.d.ts",
-      "import": "./dist/chat/bsky/convo/getConvo.js"
-    },
-    "./chat/bsky/convo/getConvoAvailability": {
-      "development": "./lexicons/chat/bsky/convo/getConvoAvailability.ts",
-      "types": "./dist/chat/bsky/convo/getConvoAvailability.d.ts",
-      "import": "./dist/chat/bsky/convo/getConvoAvailability.js"
-    },
-    "./chat/bsky/convo/getConvoForMembers": {
-      "development": "./lexicons/chat/bsky/convo/getConvoForMembers.ts",
-      "types": "./dist/chat/bsky/convo/getConvoForMembers.d.ts",
-      "import": "./dist/chat/bsky/convo/getConvoForMembers.js"
-    },
-    "./chat/bsky/convo/getLog": {
-      "development": "./lexicons/chat/bsky/convo/getLog.ts",
-      "types": "./dist/chat/bsky/convo/getLog.d.ts",
-      "import": "./dist/chat/bsky/convo/getLog.js"
-    },
-    "./chat/bsky/convo/getMessages": {
-      "development": "./lexicons/chat/bsky/convo/getMessages.ts",
-      "types": "./dist/chat/bsky/convo/getMessages.d.ts",
-      "import": "./dist/chat/bsky/convo/getMessages.js"
-    },
-    "./chat/bsky/convo/leaveConvo": {
-      "development": "./lexicons/chat/bsky/convo/leaveConvo.ts",
-      "types": "./dist/chat/bsky/convo/leaveConvo.d.ts",
-      "import": "./dist/chat/bsky/convo/leaveConvo.js"
-    },
-    "./chat/bsky/convo/listConvos": {
-      "development": "./lexicons/chat/bsky/convo/listConvos.ts",
-      "types": "./dist/chat/bsky/convo/listConvos.d.ts",
-      "import": "./dist/chat/bsky/convo/listConvos.js"
-    },
-    "./chat/bsky/convo/muteConvo": {
-      "development": "./lexicons/chat/bsky/convo/muteConvo.ts",
-      "types": "./dist/chat/bsky/convo/muteConvo.d.ts",
-      "import": "./dist/chat/bsky/convo/muteConvo.js"
-    },
-    "./chat/bsky/convo/removeReaction": {
-      "development": "./lexicons/chat/bsky/convo/removeReaction.ts",
-      "types": "./dist/chat/bsky/convo/removeReaction.d.ts",
-      "import": "./dist/chat/bsky/convo/removeReaction.js"
-    },
-    "./chat/bsky/convo/sendMessage": {
-      "development": "./lexicons/chat/bsky/convo/sendMessage.ts",
-      "types": "./dist/chat/bsky/convo/sendMessage.d.ts",
-      "import": "./dist/chat/bsky/convo/sendMessage.js"
-    },
-    "./chat/bsky/convo/sendMessageBatch": {
-      "development": "./lexicons/chat/bsky/convo/sendMessageBatch.ts",
-      "types": "./dist/chat/bsky/convo/sendMessageBatch.d.ts",
-      "import": "./dist/chat/bsky/convo/sendMessageBatch.js"
-    },
-    "./chat/bsky/convo/unmuteConvo": {
-      "development": "./lexicons/chat/bsky/convo/unmuteConvo.ts",
-      "types": "./dist/chat/bsky/convo/unmuteConvo.d.ts",
-      "import": "./dist/chat/bsky/convo/unmuteConvo.js"
-    },
-    "./chat/bsky/convo/updateAllRead": {
-      "development": "./lexicons/chat/bsky/convo/updateAllRead.ts",
-      "types": "./dist/chat/bsky/convo/updateAllRead.d.ts",
-      "import": "./dist/chat/bsky/convo/updateAllRead.js"
-    },
-    "./chat/bsky/convo/updateRead": {
-      "development": "./lexicons/chat/bsky/convo/updateRead.ts",
-      "types": "./dist/chat/bsky/convo/updateRead.d.ts",
-      "import": "./dist/chat/bsky/convo/updateRead.js"
-    },
-    "./chat/bsky/moderation/getActorMetadata": {
-      "development": "./lexicons/chat/bsky/moderation/getActorMetadata.ts",
-      "types": "./dist/chat/bsky/moderation/getActorMetadata.d.ts",
-      "import": "./dist/chat/bsky/moderation/getActorMetadata.js"
-    },
-    "./chat/bsky/moderation/getMessageContext": {
-      "development": "./lexicons/chat/bsky/moderation/getMessageContext.ts",
-      "types": "./dist/chat/bsky/moderation/getMessageContext.d.ts",
-      "import": "./dist/chat/bsky/moderation/getMessageContext.js"
-    },
-    "./chat/bsky/moderation/updateActorAccess": {
-      "development": "./lexicons/chat/bsky/moderation/updateActorAccess.ts",
-      "types": "./dist/chat/bsky/moderation/updateActorAccess.d.ts",
-      "import": "./dist/chat/bsky/moderation/updateActorAccess.js"
-    },
-    "./com/atproto/admin/defs": {
-      "development": "./lexicons/com/atproto/admin/defs.ts",
-      "types": "./dist/com/atproto/admin/defs.d.ts",
-      "import": "./dist/com/atproto/admin/defs.js"
-    },
-    "./com/atproto/admin/deleteAccount": {
-      "development": "./lexicons/com/atproto/admin/deleteAccount.ts",
-      "types": "./dist/com/atproto/admin/deleteAccount.d.ts",
-      "import": "./dist/com/atproto/admin/deleteAccount.js"
-    },
-    "./com/atproto/admin/disableAccountInvites": {
-      "development": "./lexicons/com/atproto/admin/disableAccountInvites.ts",
-      "types": "./dist/com/atproto/admin/disableAccountInvites.d.ts",
-      "import": "./dist/com/atproto/admin/disableAccountInvites.js"
-    },
-    "./com/atproto/admin/disableInviteCodes": {
-      "development": "./lexicons/com/atproto/admin/disableInviteCodes.ts",
-      "types": "./dist/com/atproto/admin/disableInviteCodes.d.ts",
-      "import": "./dist/com/atproto/admin/disableInviteCodes.js"
-    },
-    "./com/atproto/admin/enableAccountInvites": {
-      "development": "./lexicons/com/atproto/admin/enableAccountInvites.ts",
-      "types": "./dist/com/atproto/admin/enableAccountInvites.d.ts",
-      "import": "./dist/com/atproto/admin/enableAccountInvites.js"
-    },
-    "./com/atproto/admin/getAccountInfo": {
-      "development": "./lexicons/com/atproto/admin/getAccountInfo.ts",
-      "types": "./dist/com/atproto/admin/getAccountInfo.d.ts",
-      "import": "./dist/com/atproto/admin/getAccountInfo.js"
-    },
-    "./com/atproto/admin/getAccountInfos": {
-      "development": "./lexicons/com/atproto/admin/getAccountInfos.ts",
-      "types": "./dist/com/atproto/admin/getAccountInfos.d.ts",
-      "import": "./dist/com/atproto/admin/getAccountInfos.js"
-    },
-    "./com/atproto/admin/getInviteCodes": {
-      "development": "./lexicons/com/atproto/admin/getInviteCodes.ts",
-      "types": "./dist/com/atproto/admin/getInviteCodes.d.ts",
-      "import": "./dist/com/atproto/admin/getInviteCodes.js"
-    },
-    "./com/atproto/admin/getSubjectStatus": {
-      "development": "./lexicons/com/atproto/admin/getSubjectStatus.ts",
-      "types": "./dist/com/atproto/admin/getSubjectStatus.d.ts",
-      "import": "./dist/com/atproto/admin/getSubjectStatus.js"
-    },
-    "./com/atproto/admin/searchAccounts": {
-      "development": "./lexicons/com/atproto/admin/searchAccounts.ts",
-      "types": "./dist/com/atproto/admin/searchAccounts.d.ts",
-      "import": "./dist/com/atproto/admin/searchAccounts.js"
-    },
-    "./com/atproto/admin/sendEmail": {
-      "development": "./lexicons/com/atproto/admin/sendEmail.ts",
-      "types": "./dist/com/atproto/admin/sendEmail.d.ts",
-      "import": "./dist/com/atproto/admin/sendEmail.js"
-    },
-    "./com/atproto/admin/updateAccountEmail": {
-      "development": "./lexicons/com/atproto/admin/updateAccountEmail.ts",
-      "types": "./dist/com/atproto/admin/updateAccountEmail.d.ts",
-      "import": "./dist/com/atproto/admin/updateAccountEmail.js"
-    },
-    "./com/atproto/admin/updateAccountHandle": {
-      "development": "./lexicons/com/atproto/admin/updateAccountHandle.ts",
-      "types": "./dist/com/atproto/admin/updateAccountHandle.d.ts",
-      "import": "./dist/com/atproto/admin/updateAccountHandle.js"
-    },
-    "./com/atproto/admin/updateAccountPassword": {
-      "development": "./lexicons/com/atproto/admin/updateAccountPassword.ts",
-      "types": "./dist/com/atproto/admin/updateAccountPassword.d.ts",
-      "import": "./dist/com/atproto/admin/updateAccountPassword.js"
-    },
-    "./com/atproto/admin/updateAccountSigningKey": {
-      "development": "./lexicons/com/atproto/admin/updateAccountSigningKey.ts",
-      "types": "./dist/com/atproto/admin/updateAccountSigningKey.d.ts",
-      "import": "./dist/com/atproto/admin/updateAccountSigningKey.js"
-    },
-    "./com/atproto/admin/updateSubjectStatus": {
-      "development": "./lexicons/com/atproto/admin/updateSubjectStatus.ts",
-      "types": "./dist/com/atproto/admin/updateSubjectStatus.d.ts",
-      "import": "./dist/com/atproto/admin/updateSubjectStatus.js"
-    },
-    "./com/atproto/identity/defs": {
-      "development": "./lexicons/com/atproto/identity/defs.ts",
-      "types": "./dist/com/atproto/identity/defs.d.ts",
-      "import": "./dist/com/atproto/identity/defs.js"
-    },
-    "./com/atproto/identity/getRecommendedDidCredentials": {
-      "development": "./lexicons/com/atproto/identity/getRecommendedDidCredentials.ts",
-      "types": "./dist/com/atproto/identity/getRecommendedDidCredentials.d.ts",
-      "import": "./dist/com/atproto/identity/getRecommendedDidCredentials.js"
-    },
-    "./com/atproto/identity/refreshIdentity": {
-      "development": "./lexicons/com/atproto/identity/refreshIdentity.ts",
-      "types": "./dist/com/atproto/identity/refreshIdentity.d.ts",
-      "import": "./dist/com/atproto/identity/refreshIdentity.js"
-    },
-    "./com/atproto/identity/requestPlcOperationSignature": {
-      "development": "./lexicons/com/atproto/identity/requestPlcOperationSignature.ts",
-      "types": "./dist/com/atproto/identity/requestPlcOperationSignature.d.ts",
-      "import": "./dist/com/atproto/identity/requestPlcOperationSignature.js"
-    },
-    "./com/atproto/identity/resolveDid": {
-      "development": "./lexicons/com/atproto/identity/resolveDid.ts",
-      "types": "./dist/com/atproto/identity/resolveDid.d.ts",
-      "import": "./dist/com/atproto/identity/resolveDid.js"
-    },
-    "./com/atproto/identity/resolveHandle": {
-      "development": "./lexicons/com/atproto/identity/resolveHandle.ts",
-      "types": "./dist/com/atproto/identity/resolveHandle.d.ts",
-      "import": "./dist/com/atproto/identity/resolveHandle.js"
-    },
-    "./com/atproto/identity/resolveIdentity": {
-      "development": "./lexicons/com/atproto/identity/resolveIdentity.ts",
-      "types": "./dist/com/atproto/identity/resolveIdentity.d.ts",
-      "import": "./dist/com/atproto/identity/resolveIdentity.js"
-    },
-    "./com/atproto/identity/signPlcOperation": {
-      "development": "./lexicons/com/atproto/identity/signPlcOperation.ts",
-      "types": "./dist/com/atproto/identity/signPlcOperation.d.ts",
-      "import": "./dist/com/atproto/identity/signPlcOperation.js"
-    },
-    "./com/atproto/identity/submitPlcOperation": {
-      "development": "./lexicons/com/atproto/identity/submitPlcOperation.ts",
-      "types": "./dist/com/atproto/identity/submitPlcOperation.d.ts",
-      "import": "./dist/com/atproto/identity/submitPlcOperation.js"
-    },
-    "./com/atproto/identity/updateHandle": {
-      "development": "./lexicons/com/atproto/identity/updateHandle.ts",
-      "types": "./dist/com/atproto/identity/updateHandle.d.ts",
-      "import": "./dist/com/atproto/identity/updateHandle.js"
-    },
-    "./com/atproto/label/defs": {
-      "development": "./lexicons/com/atproto/label/defs.ts",
-      "types": "./dist/com/atproto/label/defs.d.ts",
-      "import": "./dist/com/atproto/label/defs.js"
-    },
-    "./com/atproto/label/queryLabels": {
-      "development": "./lexicons/com/atproto/label/queryLabels.ts",
-      "types": "./dist/com/atproto/label/queryLabels.d.ts",
-      "import": "./dist/com/atproto/label/queryLabels.js"
-    },
-    "./com/atproto/label/subscribeLabels": {
-      "development": "./lexicons/com/atproto/label/subscribeLabels.ts",
-      "types": "./dist/com/atproto/label/subscribeLabels.d.ts",
-      "import": "./dist/com/atproto/label/subscribeLabels.js"
-    },
-    "./com/atproto/lexicon/resolveLexicon": {
-      "development": "./lexicons/com/atproto/lexicon/resolveLexicon.ts",
-      "types": "./dist/com/atproto/lexicon/resolveLexicon.d.ts",
-      "import": "./dist/com/atproto/lexicon/resolveLexicon.js"
-    },
-    "./com/atproto/lexicon/schema": {
-      "development": "./lexicons/com/atproto/lexicon/schema.ts",
-      "types": "./dist/com/atproto/lexicon/schema.d.ts",
-      "import": "./dist/com/atproto/lexicon/schema.js"
-    },
-    "./com/atproto/moderation/createReport": {
-      "development": "./lexicons/com/atproto/moderation/createReport.ts",
-      "types": "./dist/com/atproto/moderation/createReport.d.ts",
-      "import": "./dist/com/atproto/moderation/createReport.js"
-    },
-    "./com/atproto/moderation/defs": {
-      "development": "./lexicons/com/atproto/moderation/defs.ts",
-      "types": "./dist/com/atproto/moderation/defs.d.ts",
-      "import": "./dist/com/atproto/moderation/defs.js"
-    },
-    "./com/atproto/repo/applyWrites": {
-      "development": "./lexicons/com/atproto/repo/applyWrites.ts",
-      "types": "./dist/com/atproto/repo/applyWrites.d.ts",
-      "import": "./dist/com/atproto/repo/applyWrites.js"
-    },
-    "./com/atproto/repo/createRecord": {
-      "development": "./lexicons/com/atproto/repo/createRecord.ts",
-      "types": "./dist/com/atproto/repo/createRecord.d.ts",
-      "import": "./dist/com/atproto/repo/createRecord.js"
-    },
-    "./com/atproto/repo/defs": {
-      "development": "./lexicons/com/atproto/repo/defs.ts",
-      "types": "./dist/com/atproto/repo/defs.d.ts",
-      "import": "./dist/com/atproto/repo/defs.js"
-    },
-    "./com/atproto/repo/deleteRecord": {
-      "development": "./lexicons/com/atproto/repo/deleteRecord.ts",
-      "types": "./dist/com/atproto/repo/deleteRecord.d.ts",
-      "import": "./dist/com/atproto/repo/deleteRecord.js"
-    },
-    "./com/atproto/repo/describeRepo": {
-      "development": "./lexicons/com/atproto/repo/describeRepo.ts",
-      "types": "./dist/com/atproto/repo/describeRepo.d.ts",
-      "import": "./dist/com/atproto/repo/describeRepo.js"
-    },
-    "./com/atproto/repo/getRecord": {
-      "development": "./lexicons/com/atproto/repo/getRecord.ts",
-      "types": "./dist/com/atproto/repo/getRecord.d.ts",
-      "import": "./dist/com/atproto/repo/getRecord.js"
-    },
-    "./com/atproto/repo/importRepo": {
-      "development": "./lexicons/com/atproto/repo/importRepo.ts",
-      "types": "./dist/com/atproto/repo/importRepo.d.ts",
-      "import": "./dist/com/atproto/repo/importRepo.js"
-    },
-    "./com/atproto/repo/listMissingBlobs": {
-      "development": "./lexicons/com/atproto/repo/listMissingBlobs.ts",
-      "types": "./dist/com/atproto/repo/listMissingBlobs.d.ts",
-      "import": "./dist/com/atproto/repo/listMissingBlobs.js"
-    },
-    "./com/atproto/repo/listRecords": {
-      "development": "./lexicons/com/atproto/repo/listRecords.ts",
-      "types": "./dist/com/atproto/repo/listRecords.d.ts",
-      "import": "./dist/com/atproto/repo/listRecords.js"
-    },
-    "./com/atproto/repo/putRecord": {
-      "development": "./lexicons/com/atproto/repo/putRecord.ts",
-      "types": "./dist/com/atproto/repo/putRecord.d.ts",
-      "import": "./dist/com/atproto/repo/putRecord.js"
-    },
-    "./com/atproto/repo/strongRef": {
-      "development": "./lexicons/com/atproto/repo/strongRef.ts",
-      "types": "./dist/com/atproto/repo/strongRef.d.ts",
-      "import": "./dist/com/atproto/repo/strongRef.js"
-    },
-    "./com/atproto/repo/uploadBlob": {
-      "development": "./lexicons/com/atproto/repo/uploadBlob.ts",
-      "types": "./dist/com/atproto/repo/uploadBlob.d.ts",
-      "import": "./dist/com/atproto/repo/uploadBlob.js"
-    },
-    "./com/atproto/server/activateAccount": {
-      "development": "./lexicons/com/atproto/server/activateAccount.ts",
-      "types": "./dist/com/atproto/server/activateAccount.d.ts",
-      "import": "./dist/com/atproto/server/activateAccount.js"
-    },
-    "./com/atproto/server/checkAccountStatus": {
-      "development": "./lexicons/com/atproto/server/checkAccountStatus.ts",
-      "types": "./dist/com/atproto/server/checkAccountStatus.d.ts",
-      "import": "./dist/com/atproto/server/checkAccountStatus.js"
-    },
-    "./com/atproto/server/confirmEmail": {
-      "development": "./lexicons/com/atproto/server/confirmEmail.ts",
-      "types": "./dist/com/atproto/server/confirmEmail.d.ts",
-      "import": "./dist/com/atproto/server/confirmEmail.js"
-    },
-    "./com/atproto/server/createAccount": {
-      "development": "./lexicons/com/atproto/server/createAccount.ts",
-      "types": "./dist/com/atproto/server/createAccount.d.ts",
-      "import": "./dist/com/atproto/server/createAccount.js"
-    },
-    "./com/atproto/server/createAppPassword": {
-      "development": "./lexicons/com/atproto/server/createAppPassword.ts",
-      "types": "./dist/com/atproto/server/createAppPassword.d.ts",
-      "import": "./dist/com/atproto/server/createAppPassword.js"
-    },
-    "./com/atproto/server/createInviteCode": {
-      "development": "./lexicons/com/atproto/server/createInviteCode.ts",
-      "types": "./dist/com/atproto/server/createInviteCode.d.ts",
-      "import": "./dist/com/atproto/server/createInviteCode.js"
-    },
-    "./com/atproto/server/createInviteCodes": {
-      "development": "./lexicons/com/atproto/server/createInviteCodes.ts",
-      "types": "./dist/com/atproto/server/createInviteCodes.d.ts",
-      "import": "./dist/com/atproto/server/createInviteCodes.js"
-    },
-    "./com/atproto/server/createSession": {
-      "development": "./lexicons/com/atproto/server/createSession.ts",
-      "types": "./dist/com/atproto/server/createSession.d.ts",
-      "import": "./dist/com/atproto/server/createSession.js"
-    },
-    "./com/atproto/server/deactivateAccount": {
-      "development": "./lexicons/com/atproto/server/deactivateAccount.ts",
-      "types": "./dist/com/atproto/server/deactivateAccount.d.ts",
-      "import": "./dist/com/atproto/server/deactivateAccount.js"
-    },
-    "./com/atproto/server/defs": {
-      "development": "./lexicons/com/atproto/server/defs.ts",
-      "types": "./dist/com/atproto/server/defs.d.ts",
-      "import": "./dist/com/atproto/server/defs.js"
-    },
-    "./com/atproto/server/deleteAccount": {
-      "development": "./lexicons/com/atproto/server/deleteAccount.ts",
-      "types": "./dist/com/atproto/server/deleteAccount.d.ts",
-      "import": "./dist/com/atproto/server/deleteAccount.js"
-    },
-    "./com/atproto/server/deleteSession": {
-      "development": "./lexicons/com/atproto/server/deleteSession.ts",
-      "types": "./dist/com/atproto/server/deleteSession.d.ts",
-      "import": "./dist/com/atproto/server/deleteSession.js"
-    },
-    "./com/atproto/server/describeServer": {
-      "development": "./lexicons/com/atproto/server/describeServer.ts",
-      "types": "./dist/com/atproto/server/describeServer.d.ts",
-      "import": "./dist/com/atproto/server/describeServer.js"
-    },
-    "./com/atproto/server/getAccountInviteCodes": {
-      "development": "./lexicons/com/atproto/server/getAccountInviteCodes.ts",
-      "types": "./dist/com/atproto/server/getAccountInviteCodes.d.ts",
-      "import": "./dist/com/atproto/server/getAccountInviteCodes.js"
-    },
-    "./com/atproto/server/getServiceAuth": {
-      "development": "./lexicons/com/atproto/server/getServiceAuth.ts",
-      "types": "./dist/com/atproto/server/getServiceAuth.d.ts",
-      "import": "./dist/com/atproto/server/getServiceAuth.js"
-    },
-    "./com/atproto/server/getSession": {
-      "development": "./lexicons/com/atproto/server/getSession.ts",
-      "types": "./dist/com/atproto/server/getSession.d.ts",
-      "import": "./dist/com/atproto/server/getSession.js"
-    },
-    "./com/atproto/server/listAppPasswords": {
-      "development": "./lexicons/com/atproto/server/listAppPasswords.ts",
-      "types": "./dist/com/atproto/server/listAppPasswords.d.ts",
-      "import": "./dist/com/atproto/server/listAppPasswords.js"
-    },
-    "./com/atproto/server/refreshSession": {
-      "development": "./lexicons/com/atproto/server/refreshSession.ts",
-      "types": "./dist/com/atproto/server/refreshSession.d.ts",
-      "import": "./dist/com/atproto/server/refreshSession.js"
-    },
-    "./com/atproto/server/requestAccountDelete": {
-      "development": "./lexicons/com/atproto/server/requestAccountDelete.ts",
-      "types": "./dist/com/atproto/server/requestAccountDelete.d.ts",
-      "import": "./dist/com/atproto/server/requestAccountDelete.js"
-    },
-    "./com/atproto/server/requestEmailConfirmation": {
-      "development": "./lexicons/com/atproto/server/requestEmailConfirmation.ts",
-      "types": "./dist/com/atproto/server/requestEmailConfirmation.d.ts",
-      "import": "./dist/com/atproto/server/requestEmailConfirmation.js"
-    },
-    "./com/atproto/server/requestEmailUpdate": {
-      "development": "./lexicons/com/atproto/server/requestEmailUpdate.ts",
-      "types": "./dist/com/atproto/server/requestEmailUpdate.d.ts",
-      "import": "./dist/com/atproto/server/requestEmailUpdate.js"
-    },
-    "./com/atproto/server/requestPasswordReset": {
-      "development": "./lexicons/com/atproto/server/requestPasswordReset.ts",
-      "types": "./dist/com/atproto/server/requestPasswordReset.d.ts",
-      "import": "./dist/com/atproto/server/requestPasswordReset.js"
-    },
-    "./com/atproto/server/reserveSigningKey": {
-      "development": "./lexicons/com/atproto/server/reserveSigningKey.ts",
-      "types": "./dist/com/atproto/server/reserveSigningKey.d.ts",
-      "import": "./dist/com/atproto/server/reserveSigningKey.js"
-    },
-    "./com/atproto/server/resetPassword": {
-      "development": "./lexicons/com/atproto/server/resetPassword.ts",
-      "types": "./dist/com/atproto/server/resetPassword.d.ts",
-      "import": "./dist/com/atproto/server/resetPassword.js"
-    },
-    "./com/atproto/server/revokeAppPassword": {
-      "development": "./lexicons/com/atproto/server/revokeAppPassword.ts",
-      "types": "./dist/com/atproto/server/revokeAppPassword.d.ts",
-      "import": "./dist/com/atproto/server/revokeAppPassword.js"
-    },
-    "./com/atproto/server/updateEmail": {
-      "development": "./lexicons/com/atproto/server/updateEmail.ts",
-      "types": "./dist/com/atproto/server/updateEmail.d.ts",
-      "import": "./dist/com/atproto/server/updateEmail.js"
-    },
-    "./com/atproto/sync/defs": {
-      "development": "./lexicons/com/atproto/sync/defs.ts",
-      "types": "./dist/com/atproto/sync/defs.d.ts",
-      "import": "./dist/com/atproto/sync/defs.js"
-    },
-    "./com/atproto/sync/getBlob": {
-      "development": "./lexicons/com/atproto/sync/getBlob.ts",
-      "types": "./dist/com/atproto/sync/getBlob.d.ts",
-      "import": "./dist/com/atproto/sync/getBlob.js"
-    },
-    "./com/atproto/sync/getBlocks": {
-      "development": "./lexicons/com/atproto/sync/getBlocks.ts",
-      "types": "./dist/com/atproto/sync/getBlocks.d.ts",
-      "import": "./dist/com/atproto/sync/getBlocks.js"
-    },
-    "./com/atproto/sync/getCheckout": {
-      "development": "./lexicons/com/atproto/sync/getCheckout.ts",
-      "types": "./dist/com/atproto/sync/getCheckout.d.ts",
-      "import": "./dist/com/atproto/sync/getCheckout.js"
-    },
-    "./com/atproto/sync/getHead": {
-      "development": "./lexicons/com/atproto/sync/getHead.ts",
-      "types": "./dist/com/atproto/sync/getHead.d.ts",
-      "import": "./dist/com/atproto/sync/getHead.js"
-    },
-    "./com/atproto/sync/getHostStatus": {
-      "development": "./lexicons/com/atproto/sync/getHostStatus.ts",
-      "types": "./dist/com/atproto/sync/getHostStatus.d.ts",
-      "import": "./dist/com/atproto/sync/getHostStatus.js"
-    },
-    "./com/atproto/sync/getLatestCommit": {
-      "development": "./lexicons/com/atproto/sync/getLatestCommit.ts",
-      "types": "./dist/com/atproto/sync/getLatestCommit.d.ts",
-      "import": "./dist/com/atproto/sync/getLatestCommit.js"
-    },
-    "./com/atproto/sync/getRecord": {
-      "development": "./lexicons/com/atproto/sync/getRecord.ts",
-      "types": "./dist/com/atproto/sync/getRecord.d.ts",
-      "import": "./dist/com/atproto/sync/getRecord.js"
-    },
-    "./com/atproto/sync/getRepo": {
-      "development": "./lexicons/com/atproto/sync/getRepo.ts",
-      "types": "./dist/com/atproto/sync/getRepo.d.ts",
-      "import": "./dist/com/atproto/sync/getRepo.js"
-    },
-    "./com/atproto/sync/getRepoStatus": {
-      "development": "./lexicons/com/atproto/sync/getRepoStatus.ts",
-      "types": "./dist/com/atproto/sync/getRepoStatus.d.ts",
-      "import": "./dist/com/atproto/sync/getRepoStatus.js"
-    },
-    "./com/atproto/sync/listBlobs": {
-      "development": "./lexicons/com/atproto/sync/listBlobs.ts",
-      "types": "./dist/com/atproto/sync/listBlobs.d.ts",
-      "import": "./dist/com/atproto/sync/listBlobs.js"
-    },
-    "./com/atproto/sync/listHosts": {
-      "development": "./lexicons/com/atproto/sync/listHosts.ts",
-      "types": "./dist/com/atproto/sync/listHosts.d.ts",
-      "import": "./dist/com/atproto/sync/listHosts.js"
-    },
-    "./com/atproto/sync/listRepos": {
-      "development": "./lexicons/com/atproto/sync/listRepos.ts",
-      "types": "./dist/com/atproto/sync/listRepos.d.ts",
-      "import": "./dist/com/atproto/sync/listRepos.js"
-    },
-    "./com/atproto/sync/listReposByCollection": {
-      "development": "./lexicons/com/atproto/sync/listReposByCollection.ts",
-      "types": "./dist/com/atproto/sync/listReposByCollection.d.ts",
-      "import": "./dist/com/atproto/sync/listReposByCollection.js"
-    },
-    "./com/atproto/sync/notifyOfUpdate": {
-      "development": "./lexicons/com/atproto/sync/notifyOfUpdate.ts",
-      "types": "./dist/com/atproto/sync/notifyOfUpdate.d.ts",
-      "import": "./dist/com/atproto/sync/notifyOfUpdate.js"
-    },
-    "./com/atproto/sync/requestCrawl": {
-      "development": "./lexicons/com/atproto/sync/requestCrawl.ts",
-      "types": "./dist/com/atproto/sync/requestCrawl.d.ts",
-      "import": "./dist/com/atproto/sync/requestCrawl.js"
-    },
-    "./com/atproto/sync/subscribeRepos": {
-      "development": "./lexicons/com/atproto/sync/subscribeRepos.ts",
-      "types": "./dist/com/atproto/sync/subscribeRepos.d.ts",
-      "import": "./dist/com/atproto/sync/subscribeRepos.js"
-    },
-    "./com/atproto/temp/addReservedHandle": {
-      "development": "./lexicons/com/atproto/temp/addReservedHandle.ts",
-      "types": "./dist/com/atproto/temp/addReservedHandle.d.ts",
-      "import": "./dist/com/atproto/temp/addReservedHandle.js"
-    },
-    "./com/atproto/temp/checkHandleAvailability": {
-      "development": "./lexicons/com/atproto/temp/checkHandleAvailability.ts",
-      "types": "./dist/com/atproto/temp/checkHandleAvailability.d.ts",
-      "import": "./dist/com/atproto/temp/checkHandleAvailability.js"
-    },
-    "./com/atproto/temp/checkSignupQueue": {
-      "development": "./lexicons/com/atproto/temp/checkSignupQueue.ts",
-      "types": "./dist/com/atproto/temp/checkSignupQueue.d.ts",
-      "import": "./dist/com/atproto/temp/checkSignupQueue.js"
-    },
-    "./com/atproto/temp/dereferenceScope": {
-      "development": "./lexicons/com/atproto/temp/dereferenceScope.ts",
-      "types": "./dist/com/atproto/temp/dereferenceScope.d.ts",
-      "import": "./dist/com/atproto/temp/dereferenceScope.js"
-    },
-    "./com/atproto/temp/fetchLabels": {
-      "development": "./lexicons/com/atproto/temp/fetchLabels.ts",
-      "types": "./dist/com/atproto/temp/fetchLabels.d.ts",
-      "import": "./dist/com/atproto/temp/fetchLabels.js"
-    },
-    "./com/atproto/temp/requestPhoneVerification": {
-      "development": "./lexicons/com/atproto/temp/requestPhoneVerification.ts",
-      "types": "./dist/com/atproto/temp/requestPhoneVerification.d.ts",
-      "import": "./dist/com/atproto/temp/requestPhoneVerification.js"
-    },
-    "./com/atproto/temp/revokeAccountCredentials": {
-      "development": "./lexicons/com/atproto/temp/revokeAccountCredentials.ts",
-      "types": "./dist/com/atproto/temp/revokeAccountCredentials.d.ts",
-      "import": "./dist/com/atproto/temp/revokeAccountCredentials.js"
-    },
-    "./tools/ozone/communication/createTemplate": {
-      "development": "./lexicons/tools/ozone/communication/createTemplate.ts",
-      "types": "./dist/tools/ozone/communication/createTemplate.d.ts",
-      "import": "./dist/tools/ozone/communication/createTemplate.js"
-    },
-    "./tools/ozone/communication/defs": {
-      "development": "./lexicons/tools/ozone/communication/defs.ts",
-      "types": "./dist/tools/ozone/communication/defs.d.ts",
-      "import": "./dist/tools/ozone/communication/defs.js"
-    },
-    "./tools/ozone/communication/deleteTemplate": {
-      "development": "./lexicons/tools/ozone/communication/deleteTemplate.ts",
-      "types": "./dist/tools/ozone/communication/deleteTemplate.d.ts",
-      "import": "./dist/tools/ozone/communication/deleteTemplate.js"
-    },
-    "./tools/ozone/communication/listTemplates": {
-      "development": "./lexicons/tools/ozone/communication/listTemplates.ts",
-      "types": "./dist/tools/ozone/communication/listTemplates.d.ts",
-      "import": "./dist/tools/ozone/communication/listTemplates.js"
-    },
-    "./tools/ozone/communication/updateTemplate": {
-      "development": "./lexicons/tools/ozone/communication/updateTemplate.ts",
-      "types": "./dist/tools/ozone/communication/updateTemplate.d.ts",
-      "import": "./dist/tools/ozone/communication/updateTemplate.js"
-    },
-    "./tools/ozone/hosting/getAccountHistory": {
-      "development": "./lexicons/tools/ozone/hosting/getAccountHistory.ts",
-      "types": "./dist/tools/ozone/hosting/getAccountHistory.d.ts",
-      "import": "./dist/tools/ozone/hosting/getAccountHistory.js"
-    },
-    "./tools/ozone/moderation/cancelScheduledActions": {
-      "development": "./lexicons/tools/ozone/moderation/cancelScheduledActions.ts",
-      "types": "./dist/tools/ozone/moderation/cancelScheduledActions.d.ts",
-      "import": "./dist/tools/ozone/moderation/cancelScheduledActions.js"
-    },
-    "./tools/ozone/moderation/defs": {
-      "development": "./lexicons/tools/ozone/moderation/defs.ts",
-      "types": "./dist/tools/ozone/moderation/defs.d.ts",
-      "import": "./dist/tools/ozone/moderation/defs.js"
-    },
-    "./tools/ozone/moderation/emitEvent": {
-      "development": "./lexicons/tools/ozone/moderation/emitEvent.ts",
-      "types": "./dist/tools/ozone/moderation/emitEvent.d.ts",
-      "import": "./dist/tools/ozone/moderation/emitEvent.js"
-    },
-    "./tools/ozone/moderation/getAccountTimeline": {
-      "development": "./lexicons/tools/ozone/moderation/getAccountTimeline.ts",
-      "types": "./dist/tools/ozone/moderation/getAccountTimeline.d.ts",
-      "import": "./dist/tools/ozone/moderation/getAccountTimeline.js"
-    },
-    "./tools/ozone/moderation/getEvent": {
-      "development": "./lexicons/tools/ozone/moderation/getEvent.ts",
-      "types": "./dist/tools/ozone/moderation/getEvent.d.ts",
-      "import": "./dist/tools/ozone/moderation/getEvent.js"
-    },
-    "./tools/ozone/moderation/getRecord": {
-      "development": "./lexicons/tools/ozone/moderation/getRecord.ts",
-      "types": "./dist/tools/ozone/moderation/getRecord.d.ts",
-      "import": "./dist/tools/ozone/moderation/getRecord.js"
-    },
-    "./tools/ozone/moderation/getRecords": {
-      "development": "./lexicons/tools/ozone/moderation/getRecords.ts",
-      "types": "./dist/tools/ozone/moderation/getRecords.d.ts",
-      "import": "./dist/tools/ozone/moderation/getRecords.js"
-    },
-    "./tools/ozone/moderation/getRepo": {
-      "development": "./lexicons/tools/ozone/moderation/getRepo.ts",
-      "types": "./dist/tools/ozone/moderation/getRepo.d.ts",
-      "import": "./dist/tools/ozone/moderation/getRepo.js"
-    },
-    "./tools/ozone/moderation/getReporterStats": {
-      "development": "./lexicons/tools/ozone/moderation/getReporterStats.ts",
-      "types": "./dist/tools/ozone/moderation/getReporterStats.d.ts",
-      "import": "./dist/tools/ozone/moderation/getReporterStats.js"
-    },
-    "./tools/ozone/moderation/getRepos": {
-      "development": "./lexicons/tools/ozone/moderation/getRepos.ts",
-      "types": "./dist/tools/ozone/moderation/getRepos.d.ts",
-      "import": "./dist/tools/ozone/moderation/getRepos.js"
-    },
-    "./tools/ozone/moderation/getSubjects": {
-      "development": "./lexicons/tools/ozone/moderation/getSubjects.ts",
-      "types": "./dist/tools/ozone/moderation/getSubjects.d.ts",
-      "import": "./dist/tools/ozone/moderation/getSubjects.js"
-    },
-    "./tools/ozone/moderation/listScheduledActions": {
-      "development": "./lexicons/tools/ozone/moderation/listScheduledActions.ts",
-      "types": "./dist/tools/ozone/moderation/listScheduledActions.d.ts",
-      "import": "./dist/tools/ozone/moderation/listScheduledActions.js"
-    },
-    "./tools/ozone/moderation/queryEvents": {
-      "development": "./lexicons/tools/ozone/moderation/queryEvents.ts",
-      "types": "./dist/tools/ozone/moderation/queryEvents.d.ts",
-      "import": "./dist/tools/ozone/moderation/queryEvents.js"
-    },
-    "./tools/ozone/moderation/queryStatuses": {
-      "development": "./lexicons/tools/ozone/moderation/queryStatuses.ts",
-      "types": "./dist/tools/ozone/moderation/queryStatuses.d.ts",
-      "import": "./dist/tools/ozone/moderation/queryStatuses.js"
-    },
-    "./tools/ozone/moderation/scheduleAction": {
-      "development": "./lexicons/tools/ozone/moderation/scheduleAction.ts",
-      "types": "./dist/tools/ozone/moderation/scheduleAction.d.ts",
-      "import": "./dist/tools/ozone/moderation/scheduleAction.js"
-    },
-    "./tools/ozone/moderation/searchRepos": {
-      "development": "./lexicons/tools/ozone/moderation/searchRepos.ts",
-      "types": "./dist/tools/ozone/moderation/searchRepos.d.ts",
-      "import": "./dist/tools/ozone/moderation/searchRepos.js"
-    },
-    "./tools/ozone/report/defs": {
-      "development": "./lexicons/tools/ozone/report/defs.ts",
-      "types": "./dist/tools/ozone/report/defs.d.ts",
-      "import": "./dist/tools/ozone/report/defs.js"
-    },
-    "./tools/ozone/safelink/addRule": {
-      "development": "./lexicons/tools/ozone/safelink/addRule.ts",
-      "types": "./dist/tools/ozone/safelink/addRule.d.ts",
-      "import": "./dist/tools/ozone/safelink/addRule.js"
-    },
-    "./tools/ozone/safelink/defs": {
-      "development": "./lexicons/tools/ozone/safelink/defs.ts",
-      "types": "./dist/tools/ozone/safelink/defs.d.ts",
-      "import": "./dist/tools/ozone/safelink/defs.js"
-    },
-    "./tools/ozone/safelink/queryEvents": {
-      "development": "./lexicons/tools/ozone/safelink/queryEvents.ts",
-      "types": "./dist/tools/ozone/safelink/queryEvents.d.ts",
-      "import": "./dist/tools/ozone/safelink/queryEvents.js"
-    },
-    "./tools/ozone/safelink/queryRules": {
-      "development": "./lexicons/tools/ozone/safelink/queryRules.ts",
-      "types": "./dist/tools/ozone/safelink/queryRules.d.ts",
-      "import": "./dist/tools/ozone/safelink/queryRules.js"
-    },
-    "./tools/ozone/safelink/removeRule": {
-      "development": "./lexicons/tools/ozone/safelink/removeRule.ts",
-      "types": "./dist/tools/ozone/safelink/removeRule.d.ts",
-      "import": "./dist/tools/ozone/safelink/removeRule.js"
-    },
-    "./tools/ozone/safelink/updateRule": {
-      "development": "./lexicons/tools/ozone/safelink/updateRule.ts",
-      "types": "./dist/tools/ozone/safelink/updateRule.d.ts",
-      "import": "./dist/tools/ozone/safelink/updateRule.js"
-    },
-    "./tools/ozone/server/getConfig": {
-      "development": "./lexicons/tools/ozone/server/getConfig.ts",
-      "types": "./dist/tools/ozone/server/getConfig.d.ts",
-      "import": "./dist/tools/ozone/server/getConfig.js"
-    },
-    "./tools/ozone/set/addValues": {
-      "development": "./lexicons/tools/ozone/set/addValues.ts",
-      "types": "./dist/tools/ozone/set/addValues.d.ts",
-      "import": "./dist/tools/ozone/set/addValues.js"
-    },
-    "./tools/ozone/set/defs": {
-      "development": "./lexicons/tools/ozone/set/defs.ts",
-      "types": "./dist/tools/ozone/set/defs.d.ts",
-      "import": "./dist/tools/ozone/set/defs.js"
-    },
-    "./tools/ozone/set/deleteSet": {
-      "development": "./lexicons/tools/ozone/set/deleteSet.ts",
-      "types": "./dist/tools/ozone/set/deleteSet.d.ts",
-      "import": "./dist/tools/ozone/set/deleteSet.js"
-    },
-    "./tools/ozone/set/deleteValues": {
-      "development": "./lexicons/tools/ozone/set/deleteValues.ts",
-      "types": "./dist/tools/ozone/set/deleteValues.d.ts",
-      "import": "./dist/tools/ozone/set/deleteValues.js"
-    },
-    "./tools/ozone/set/getValues": {
-      "development": "./lexicons/tools/ozone/set/getValues.ts",
-      "types": "./dist/tools/ozone/set/getValues.d.ts",
-      "import": "./dist/tools/ozone/set/getValues.js"
-    },
-    "./tools/ozone/set/querySets": {
-      "development": "./lexicons/tools/ozone/set/querySets.ts",
-      "types": "./dist/tools/ozone/set/querySets.d.ts",
-      "import": "./dist/tools/ozone/set/querySets.js"
-    },
-    "./tools/ozone/set/upsertSet": {
-      "development": "./lexicons/tools/ozone/set/upsertSet.ts",
-      "types": "./dist/tools/ozone/set/upsertSet.d.ts",
-      "import": "./dist/tools/ozone/set/upsertSet.js"
-    },
-    "./tools/ozone/setting/defs": {
-      "development": "./lexicons/tools/ozone/setting/defs.ts",
-      "types": "./dist/tools/ozone/setting/defs.d.ts",
-      "import": "./dist/tools/ozone/setting/defs.js"
-    },
-    "./tools/ozone/setting/listOptions": {
-      "development": "./lexicons/tools/ozone/setting/listOptions.ts",
-      "types": "./dist/tools/ozone/setting/listOptions.d.ts",
-      "import": "./dist/tools/ozone/setting/listOptions.js"
-    },
-    "./tools/ozone/setting/removeOptions": {
-      "development": "./lexicons/tools/ozone/setting/removeOptions.ts",
-      "types": "./dist/tools/ozone/setting/removeOptions.d.ts",
-      "import": "./dist/tools/ozone/setting/removeOptions.js"
-    },
-    "./tools/ozone/setting/upsertOption": {
-      "development": "./lexicons/tools/ozone/setting/upsertOption.ts",
-      "types": "./dist/tools/ozone/setting/upsertOption.d.ts",
-      "import": "./dist/tools/ozone/setting/upsertOption.js"
-    },
-    "./tools/ozone/signature/defs": {
-      "development": "./lexicons/tools/ozone/signature/defs.ts",
-      "types": "./dist/tools/ozone/signature/defs.d.ts",
-      "import": "./dist/tools/ozone/signature/defs.js"
-    },
-    "./tools/ozone/signature/findCorrelation": {
-      "development": "./lexicons/tools/ozone/signature/findCorrelation.ts",
-      "types": "./dist/tools/ozone/signature/findCorrelation.d.ts",
-      "import": "./dist/tools/ozone/signature/findCorrelation.js"
-    },
-    "./tools/ozone/signature/findRelatedAccounts": {
-      "development": "./lexicons/tools/ozone/signature/findRelatedAccounts.ts",
-      "types": "./dist/tools/ozone/signature/findRelatedAccounts.d.ts",
-      "import": "./dist/tools/ozone/signature/findRelatedAccounts.js"
-    },
-    "./tools/ozone/signature/searchAccounts": {
-      "development": "./lexicons/tools/ozone/signature/searchAccounts.ts",
-      "types": "./dist/tools/ozone/signature/searchAccounts.d.ts",
-      "import": "./dist/tools/ozone/signature/searchAccounts.js"
-    },
-    "./tools/ozone/team/addMember": {
-      "development": "./lexicons/tools/ozone/team/addMember.ts",
-      "types": "./dist/tools/ozone/team/addMember.d.ts",
-      "import": "./dist/tools/ozone/team/addMember.js"
-    },
-    "./tools/ozone/team/defs": {
-      "development": "./lexicons/tools/ozone/team/defs.ts",
-      "types": "./dist/tools/ozone/team/defs.d.ts",
-      "import": "./dist/tools/ozone/team/defs.js"
-    },
-    "./tools/ozone/team/deleteMember": {
-      "development": "./lexicons/tools/ozone/team/deleteMember.ts",
-      "types": "./dist/tools/ozone/team/deleteMember.d.ts",
-      "import": "./dist/tools/ozone/team/deleteMember.js"
-    },
-    "./tools/ozone/team/listMembers": {
-      "development": "./lexicons/tools/ozone/team/listMembers.ts",
-      "types": "./dist/tools/ozone/team/listMembers.d.ts",
-      "import": "./dist/tools/ozone/team/listMembers.js"
-    },
-    "./tools/ozone/team/updateMember": {
-      "development": "./lexicons/tools/ozone/team/updateMember.ts",
-      "types": "./dist/tools/ozone/team/updateMember.d.ts",
-      "import": "./dist/tools/ozone/team/updateMember.js"
-    },
-    "./tools/ozone/verification/defs": {
-      "development": "./lexicons/tools/ozone/verification/defs.ts",
-      "types": "./dist/tools/ozone/verification/defs.d.ts",
-      "import": "./dist/tools/ozone/verification/defs.js"
-    },
-    "./tools/ozone/verification/grantVerifications": {
-      "development": "./lexicons/tools/ozone/verification/grantVerifications.ts",
-      "types": "./dist/tools/ozone/verification/grantVerifications.d.ts",
-      "import": "./dist/tools/ozone/verification/grantVerifications.js"
-    },
-    "./tools/ozone/verification/listVerifications": {
-      "development": "./lexicons/tools/ozone/verification/listVerifications.ts",
-      "types": "./dist/tools/ozone/verification/listVerifications.d.ts",
-      "import": "./dist/tools/ozone/verification/listVerifications.js"
-    },
-    "./tools/ozone/verification/revokeVerifications": {
-      "development": "./lexicons/tools/ozone/verification/revokeVerifications.ts",
-      "types": "./dist/tools/ozone/verification/revokeVerifications.d.ts",
-      "import": "./dist/tools/ozone/verification/revokeVerifications.js"
+    "./app/bsky/*": {
+      "development": "./lexicons/app/bsky/*.ts",
+      "types": "./dist/app/bsky/*.d.ts",
+      "import": "./dist/app/bsky/*.js"
+    },
+    "./app/bsky/actor/*": {
+      "development": "./lexicons/app/bsky/actor/*.ts",
+      "types": "./dist/app/bsky/actor/*.d.ts",
+      "import": "./dist/app/bsky/actor/*.js"
+    },
+    "./app/bsky/ageassurance/*": {
+      "development": "./lexicons/app/bsky/ageassurance/*.ts",
+      "types": "./dist/app/bsky/ageassurance/*.d.ts",
+      "import": "./dist/app/bsky/ageassurance/*.js"
+    },
+    "./app/bsky/bookmark/*": {
+      "development": "./lexicons/app/bsky/bookmark/*.ts",
+      "types": "./dist/app/bsky/bookmark/*.d.ts",
+      "import": "./dist/app/bsky/bookmark/*.js"
+    },
+    "./app/bsky/contact/*": {
+      "development": "./lexicons/app/bsky/contact/*.ts",
+      "types": "./dist/app/bsky/contact/*.d.ts",
+      "import": "./dist/app/bsky/contact/*.js"
+    },
+    "./app/bsky/draft/*": {
+      "development": "./lexicons/app/bsky/draft/*.ts",
+      "types": "./dist/app/bsky/draft/*.d.ts",
+      "import": "./dist/app/bsky/draft/*.js"
+    },
+    "./app/bsky/embed/*": {
+      "development": "./lexicons/app/bsky/embed/*.ts",
+      "types": "./dist/app/bsky/embed/*.d.ts",
+      "import": "./dist/app/bsky/embed/*.js"
+    },
+    "./app/bsky/feed/*": {
+      "development": "./lexicons/app/bsky/feed/*.ts",
+      "types": "./dist/app/bsky/feed/*.d.ts",
+      "import": "./dist/app/bsky/feed/*.js"
+    },
+    "./app/bsky/graph/*": {
+      "development": "./lexicons/app/bsky/graph/*.ts",
+      "types": "./dist/app/bsky/graph/*.d.ts",
+      "import": "./dist/app/bsky/graph/*.js"
+    },
+    "./app/bsky/labeler/*": {
+      "development": "./lexicons/app/bsky/labeler/*.ts",
+      "types": "./dist/app/bsky/labeler/*.d.ts",
+      "import": "./dist/app/bsky/labeler/*.js"
+    },
+    "./app/bsky/notification/*": {
+      "development": "./lexicons/app/bsky/notification/*.ts",
+      "types": "./dist/app/bsky/notification/*.d.ts",
+      "import": "./dist/app/bsky/notification/*.js"
+    },
+    "./app/bsky/richtext/*": {
+      "development": "./lexicons/app/bsky/richtext/*.ts",
+      "types": "./dist/app/bsky/richtext/*.d.ts",
+      "import": "./dist/app/bsky/richtext/*.js"
+    },
+    "./app/bsky/unspecced/*": {
+      "development": "./lexicons/app/bsky/unspecced/*.ts",
+      "types": "./dist/app/bsky/unspecced/*.d.ts",
+      "import": "./dist/app/bsky/unspecced/*.js"
+    },
+    "./app/bsky/video/*": {
+      "development": "./lexicons/app/bsky/video/*.ts",
+      "types": "./dist/app/bsky/video/*.d.ts",
+      "import": "./dist/app/bsky/video/*.js"
+    },
+    "./chat/bsky/*": {
+      "development": "./lexicons/chat/bsky/*.ts",
+      "types": "./dist/chat/bsky/*.d.ts",
+      "import": "./dist/chat/bsky/*.js"
+    },
+    "./chat/bsky/actor/*": {
+      "development": "./lexicons/chat/bsky/actor/*.ts",
+      "types": "./dist/chat/bsky/actor/*.d.ts",
+      "import": "./dist/chat/bsky/actor/*.js"
+    },
+    "./chat/bsky/convo/*": {
+      "development": "./lexicons/chat/bsky/convo/*.ts",
+      "types": "./dist/chat/bsky/convo/*.d.ts",
+      "import": "./dist/chat/bsky/convo/*.js"
+    },
+    "./chat/bsky/moderation/*": {
+      "development": "./lexicons/chat/bsky/moderation/*.ts",
+      "types": "./dist/chat/bsky/moderation/*.d.ts",
+      "import": "./dist/chat/bsky/moderation/*.js"
+    },
+    "./com/atproto/admin/*": {
+      "development": "./lexicons/com/atproto/admin/*.ts",
+      "types": "./dist/com/atproto/admin/*.d.ts",
+      "import": "./dist/com/atproto/admin/*.js"
+    },
+    "./com/atproto/identity/*": {
+      "development": "./lexicons/com/atproto/identity/*.ts",
+      "types": "./dist/com/atproto/identity/*.d.ts",
+      "import": "./dist/com/atproto/identity/*.js"
+    },
+    "./com/atproto/label/*": {
+      "development": "./lexicons/com/atproto/label/*.ts",
+      "types": "./dist/com/atproto/label/*.d.ts",
+      "import": "./dist/com/atproto/label/*.js"
+    },
+    "./com/atproto/lexicon/*": {
+      "development": "./lexicons/com/atproto/lexicon/*.ts",
+      "types": "./dist/com/atproto/lexicon/*.d.ts",
+      "import": "./dist/com/atproto/lexicon/*.js"
+    },
+    "./com/atproto/moderation/*": {
+      "development": "./lexicons/com/atproto/moderation/*.ts",
+      "types": "./dist/com/atproto/moderation/*.d.ts",
+      "import": "./dist/com/atproto/moderation/*.js"
+    },
+    "./com/atproto/repo/*": {
+      "development": "./lexicons/com/atproto/repo/*.ts",
+      "types": "./dist/com/atproto/repo/*.d.ts",
+      "import": "./dist/com/atproto/repo/*.js"
+    },
+    "./com/atproto/server/*": {
+      "development": "./lexicons/com/atproto/server/*.ts",
+      "types": "./dist/com/atproto/server/*.d.ts",
+      "import": "./dist/com/atproto/server/*.js"
+    },
+    "./com/atproto/sync/*": {
+      "development": "./lexicons/com/atproto/sync/*.ts",
+      "types": "./dist/com/atproto/sync/*.d.ts",
+      "import": "./dist/com/atproto/sync/*.js"
+    },
+    "./com/atproto/temp/*": {
+      "development": "./lexicons/com/atproto/temp/*.ts",
+      "types": "./dist/com/atproto/temp/*.d.ts",
+      "import": "./dist/com/atproto/temp/*.js"
+    },
+    "./tools/ozone/communication/*": {
+      "development": "./lexicons/tools/ozone/communication/*.ts",
+      "types": "./dist/tools/ozone/communication/*.d.ts",
+      "import": "./dist/tools/ozone/communication/*.js"
+    },
+    "./tools/ozone/hosting/*": {
+      "development": "./lexicons/tools/ozone/hosting/*.ts",
+      "types": "./dist/tools/ozone/hosting/*.d.ts",
+      "import": "./dist/tools/ozone/hosting/*.js"
+    },
+    "./tools/ozone/moderation/*": {
+      "development": "./lexicons/tools/ozone/moderation/*.ts",
+      "types": "./dist/tools/ozone/moderation/*.d.ts",
+      "import": "./dist/tools/ozone/moderation/*.js"
+    },
+    "./tools/ozone/report/*": {
+      "development": "./lexicons/tools/ozone/report/*.ts",
+      "types": "./dist/tools/ozone/report/*.d.ts",
+      "import": "./dist/tools/ozone/report/*.js"
+    },
+    "./tools/ozone/safelink/*": {
+      "development": "./lexicons/tools/ozone/safelink/*.ts",
+      "types": "./dist/tools/ozone/safelink/*.d.ts",
+      "import": "./dist/tools/ozone/safelink/*.js"
+    },
+    "./tools/ozone/server/*": {
+      "development": "./lexicons/tools/ozone/server/*.ts",
+      "types": "./dist/tools/ozone/server/*.d.ts",
+      "import": "./dist/tools/ozone/server/*.js"
+    },
+    "./tools/ozone/set/*": {
+      "development": "./lexicons/tools/ozone/set/*.ts",
+      "types": "./dist/tools/ozone/set/*.d.ts",
+      "import": "./dist/tools/ozone/set/*.js"
+    },
+    "./tools/ozone/setting/*": {
+      "development": "./lexicons/tools/ozone/setting/*.ts",
+      "types": "./dist/tools/ozone/setting/*.d.ts",
+      "import": "./dist/tools/ozone/setting/*.js"
+    },
+    "./tools/ozone/signature/*": {
+      "development": "./lexicons/tools/ozone/signature/*.ts",
+      "types": "./dist/tools/ozone/signature/*.d.ts",
+      "import": "./dist/tools/ozone/signature/*.js"
+    },
+    "./tools/ozone/team/*": {
+      "development": "./lexicons/tools/ozone/team/*.ts",
+      "types": "./dist/tools/ozone/team/*.d.ts",
+      "import": "./dist/tools/ozone/team/*.js"
+    },
+    "./tools/ozone/verification/*": {
+      "development": "./lexicons/tools/ozone/verification/*.ts",
+      "types": "./dist/tools/ozone/verification/*.d.ts",
+      "import": "./dist/tools/ozone/verification/*.js"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "bump": "bumpp",
     "build": "tsc",
     "prepublish": "pnpm build",
-    "update": "node scripts/update-lexicons.ts"
+    "update-lexicons": "node scripts/update-lexicons.ts"
   },
   "keywords": [
     "lexicon",
@@ -1622,7 +213,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "bumpp": "^9.0.0",
-    "typescript": "^5.0.0"
+    "bumpp": "^9.11.1",
+    "typescript": "^5.9.3"
   }
 }
